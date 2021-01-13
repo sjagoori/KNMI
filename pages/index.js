@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Button from 'components/button/Button'
 import TextInput from 'components/input/text/TextInput'
 import Highlight from 'components/highlight/Highlight'
-import Image from 'components/image/Image'
 
 export default function Home() {
   return (
@@ -59,14 +58,6 @@ export default function Home() {
           placeholder='Placeholder text'
         />
 
-      </div>
-
-      <div>
-        <h2>Image</h2>
-        {/* <Image
-          path={'../components/button/screenshot.png'}
-        /> */}
-        {console.log()}
       </div>
     </>
   )
