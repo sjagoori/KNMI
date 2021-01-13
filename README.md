@@ -1,9 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Introduction
 
-## Getting Started
+For the [KNMI](https://www.knmi.nl/home) we have been tasked to create an interactive data visualization tool about the effect COVID-19 had on the NO<sub>2</sub> during the first wave of COVID-19 (March 2020 - June 2020).
 
-First, run the development server:
+[Link to the data viz](#).
 
+This project have been developed with [Next.js](https://nextjs.org/) with ```create-next-app```.
+
+## About this project
+
+This project is created with Next.js, a React framework for production, it allows for hybrid static & server rendering, route pre-fetching and more. We picked this framework to develop the tool to keep the tool readily available for when KNMI or policymakers wish to use it.
+
+This tool helps the user to figure out what kind of impact COVID-19 had on the amount of pollutants and will help policymakers to make their next big decision regarding said pollutants.
+
+The data we used within this project originates from [aqicn](https://aqicn.org/), a non-profit project who's mission it is to make citizens aware of air pollution and to provide those with a unified and world-wide air quality information. They receive data from more than 130 countries, covering more than 30,000 stations in 2000 major cities.
+
+## Getting started
+
+To run this project on your own machine follow the following steps:
+
+1. Clone the project to the local machine
+```bash
+git clone https://github.com/sjagoori/KNMI.git
+```
+2. Install the required packages
+```bash
+# For NPM 
+npm install
+# for yarn
+yarn
+```
+
+3. run the development server:
 ```bash
 npm run dev
 # or
@@ -12,9 +39,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
+## Learn More about Nextjs
 
 To learn more about Next.js, take a look at the following resources:
 
