@@ -26,7 +26,7 @@ export default class Button extends React.Component {
 const Container = styled.div`
   color: ${props => {
     if (props.variant == 'primary') return props.theme.colors.white;
-    if (props.variant == 'secondary' || props.variant == 'ghost') return props.theme.colors.black;
+    if (props.variant == 'ghost') return props.theme.colors.primary;
   }};
 
   background-color: ${props => {
@@ -35,14 +35,15 @@ const Container = styled.div`
   }};
 
   border: ${props => {
-    if (props.variant == 'ghost') return '2px solid ' + props.theme.colors.black;
+    if (props.variant == 'ghost') return '2px solid ' + props.theme.colors.primary;
   }};
 
   text-transform: capitalize;
   font-size: .9em;
   cursor: pointer;
   display: block;
-  width: 150px;
+  width: 100px;
+  padding: 20px 0px 20px 0px;
   height: 30px;
 
   display: flex;
