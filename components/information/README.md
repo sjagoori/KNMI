@@ -1,14 +1,14 @@
 # Information component
 
 ## Table of content
-- [What does it do]()
-- [How to use]()
-- [Dependencies]()
-- [Developer]()
-- [Changelog]()
+- [What it does](#what-it-does)
+- [How to use](#How-to-use)
+- [Dependencies](#Dependencies)
+- [Developer](#Developer)
+- [Changelog](#Changelog)
 
 
-## What does it do
+## What it does
 Creates a section to inform the user about some subject.
 
 ## How to use
@@ -34,10 +34,11 @@ import Information from 'components/information/Information'
 ## Changelog
 
 All notable changes to this component will be documented in this file.
-The format adheres to the template from [Shabier](github.com/sjagoori) and [Keep a changelog](https://keepachangelog.com/en/1.0.0/).
+The format adheres to the template from [Shabier](github.com/sjagoori).
 
-## 1.0.0 - 2021-01-14
+## 1.0.1
 
 ### Added
-- This CHANGELOG file
+- Improved files to adhere to code standards.
 - Created the component to show information
+- This CHANGELOG file

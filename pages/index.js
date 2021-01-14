@@ -1,4 +1,3 @@
-import Information from '@/components/information/information'
 import Navbar from 'components/navbar/Navbar'
 
 export default function Home() {

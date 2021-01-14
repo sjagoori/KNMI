@@ -6,7 +6,7 @@ export default class Information extends Component {
     constructor(props) {
         super(props)
     }
-    
+
     render() {
         return (
             <ThemeProvider theme={theme}>
@@ -26,7 +26,7 @@ export default class Information extends Component {
 }
 
 const Container = styled.div`
-background-color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.white};
     width: 95%;
     height: 450px;
 
