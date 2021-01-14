@@ -1,8 +1,6 @@
 import { Component } from 'react'
-import { render } from 'react-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
-import Icon from 'assets/svg/help'
 
 export default class Information extends Component {
     constructor(props) {
@@ -15,7 +13,6 @@ export default class Information extends Component {
                 <Container>
                     <InfoContainer>
                         <Title>{this.props.title}</Title>
-                        <Icon />
                         <InfoDescription>{this.props.infoDescription}</InfoDescription>
                         <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
                     </InfoContainer>
@@ -29,8 +26,7 @@ export default class Information extends Component {
 }
 
 const Container = styled.div`
-// background-color: ${props => props.theme.colors.white};
-    background-color: #ffcc00;
+background-color: ${props => props.theme.colors.white};
     width: 95%;
     height: 450px;
 
@@ -40,11 +36,13 @@ const Container = styled.div`
 
     margin: 40px;
     padding: 15px;
+    margin-top: 200px;
 `
 const InfoContainer = styled.div`
     margin: 0 auto;
     margin-left: 1em;
     max-width: 50%;
+    
     display: inline-flex;
     flex-direction: column;
 `
@@ -62,5 +60,4 @@ const ImageContainer = styled.div`
 `
 const Image = styled.img`
     width: 100%;
-    height: 
 `
