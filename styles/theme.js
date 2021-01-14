@@ -1,13 +1,13 @@
 export default {
   colors: {
-    primary: "#1D1D1D",
+    primary: "#577699",
     secondary: "#CCCCCC",
     black: "#1D1D1D",
-    white: "white",
+    white: "#FFFFFF",
     grey: "#D5D5D5",
-    red: "red",
+    red: "#FF0000",
     green: "#27CB73",
     yellow: '#F2DE66'
   },
-  backgroundColor:'#FBF1F4'
+  backgroundColor:'#F3F5F9'
 }
