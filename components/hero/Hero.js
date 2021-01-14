@@ -77,7 +77,6 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column; 
   padding-left: 50px;
-  border: 1px solid green;
 `
 
 const Title = styled.h2` 
