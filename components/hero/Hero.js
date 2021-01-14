@@ -2,7 +2,7 @@ import { Component } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import Link from 'next/link'
 import theme from 'styles/theme'
-
+import Button from 'components/button/Button'
 
 export default class Hero extends Component {
   constructor(props) {
@@ -13,23 +13,31 @@ export default class Hero extends Component {
     return (
       <ThemeProvider theme={theme}>
         <Container>
+          <SubContainer>
 
-          <Link href={this.props.url}>
-            <ImageContainer>
-              <Image src={this.props.imgUrl} />
-            </ImageContainer>
-          </Link>
+            <Link href={this.props.url}>
+              <ImageContainer>
+                <Image src={this.props.imgUrl} />
+              </ImageContainer>
+            </Link>
 
-          <DescriptionContainer>
-            <div>
-              <Label>{this.props.label}</Label>
-              <Link href={this.props.url}>
-                <Title>{this.props.title}</Title>
-              </Link>
-            </div>
-            <Description>{this.props.description}</Description>
-          </DescriptionContainer>
+            <DescriptionContainer>
+              <div>
+                <Label>{this.props.label}</Label>
+                <Link href={this.props.url}>
+                  <Title>{this.props.title}</Title>
+                </Link>
+              </div>
+              <Description>{this.props.description}</Description>
 
+              <Button
+                label='What is NO²'
+                url={this.props.url}
+                variant='ghost'
+              />
+            </DescriptionContainer>
+
+          </SubContainer>
         </Container>
       </ThemeProvider>
     )
@@ -37,45 +45,39 @@ export default class Hero extends Component {
 }
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 65%;
+  margin-top: 140px;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => props.theme.colors.secondary + '20'};
+`
 
-  @media (max-width: 1200px) {
-    max-width: 95%;
-  }
+const SubContainer = styled.div`
+  margin: 0 auto;
+  max-width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
 `
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 70vh;
   cursor: pointer;
 `
 
 const Image = styled.img`
-  min-width: 350px;
+  min-width: 450px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 `
 
 const DescriptionContainer = styled.div`
-  /* display: flex; */
-
-  div {
-    width: 50%;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-  }
-
-  @media (max-width: 600px) {
-    flex-direction: column; 
-
-    div{
-      width: 100%;
-      flex-direction: row;
-    }
-  }
+  display: flex;
+  flex-direction: column; 
+  padding-left: 50px;
+  border: 1px solid green;
 `
 
 const Title = styled.h2` 
@@ -83,8 +85,7 @@ const Title = styled.h2`
   margin-top: 15px;
   margin-bottom: 0;
   font-weight: 500;
-  width: max-content;
-
+  
   :hover{
     cursor: pointer;
     text-decoration: underline;
@@ -96,7 +97,7 @@ const Title = styled.h2`
 `
 
 const Description = styled.p`
-  width: 55%;
+  width: 90%;
   line-height: 1.5;
   /* padding-left: 2rem; */
 
@@ -107,6 +108,8 @@ const Description = styled.p`
 `
 
 const Label = styled.p`
+  text-transform: uppercase;
+  font-size: .8rem;
   font-weight: 700;
-  color: ${props => { props.theme.colors.primary }}
+  color: ${props => props.theme.colors.secondary}
 `
