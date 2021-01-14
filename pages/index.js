@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Front-end setup</title>
+        <title>KMNI</title>
       </Head>
 
       <h1>Front-end Setup</h1>
