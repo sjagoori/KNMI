@@ -31,7 +31,7 @@ export default class Hero extends Component {
               <Description>{this.props.description}</Description>
 
               <Button
-                label='What is NO²'
+                label={this.props.buttonLabel}
                 url={this.props.url}
                 variant='ghost'
               />
@@ -90,21 +90,10 @@ const Title = styled.h2`
     cursor: pointer;
     text-decoration: underline;
   }
-
-  @media (max-width: 600px) {
-    font-size: 1.8rem;
-  }
 `
 
 const Description = styled.p`
-  width: 90%;
   line-height: 1.5;
-  /* padding-left: 2rem; */
-
-  @media (max-width: 600px) {
-    width: 100%;
-    padding: 0;
-  }
 `
 
 const Label = styled.p`
