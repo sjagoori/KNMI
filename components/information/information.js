@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
+import Icon from 'assets/svg/help'
 
 export default class Information extends Component {
   constructor(props) {
@@ -13,7 +14,9 @@ export default class Information extends Component {
           <Container>
             <InfoContainer>
               <Title>{this.props.title}</Title>
+              <Icon />
               <InfoDescription>{this.props.infoDescription}</InfoDescription>
+              <Icon />
               <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
             </InfoContainer>
             <ImageContainer>
@@ -26,38 +29,47 @@ export default class Information extends Component {
 }
 
 const Container = styled.div`
-  background-color: ${props => props.theme.colors.white};
-  width: 95%;
-  height: 450px;
+  background-color: #fffccc;
+  max-width: 85vw;
+  height: 500px;
 
   display: flex;
-  align-items: center;
+  justify-conten: center;
   flex-direction: row;
 
   margin: 40px;
+  margin-left: 80px;
   padding: 15px;
   margin-top: 200px;
 `
 const InfoContainer = styled.div`
   margin: 0 auto;
   margin-left: 1em;
-  max-width: 50%;
+  max-width: 40%;
+  // height: 400px;
   
   display: inline-flex;
-  flex-direction: column;
-`
-
-const Title = styled.h2`
+  flex-direction: row;
+  flex-wrap: wrap;
+  `
+  
+  const Title = styled.h2`
   font-size: 2em;
+  flex: 1 0 100%;
 `
 
 const InfoDescription = styled.p`
   opacity: 70%;
+  flex: 0 0 47%;
+  margin-right: 1em;
 `
+
+
 const ImageContainer = styled.div`
   margin: auto 20px;
   order: 1;
+  max-width: 55%
 `
 const Image = styled.img`
-  width: 100%;
+  width: 80%;
 `
