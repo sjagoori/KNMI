@@ -1,15 +1,10 @@
-import Navbar from 'components/navbar/Navbar'
+import DivergingBarChart from 'components/diverging-barchart/Chart'
 
 export default function Home() {
   return (
     <>
-      <Navbar
-        links={{
-          link1: { label: 'Link', url: '#' },
-          link2: { label: 'Link', url: '#' },
-          link3: { label: 'Link', url: '#' },
-        }}
-        cta={{ label: 'label', url: '#' }}
+      <DivergingBarChart
+        id='chart'
       />
     </>
   )
