@@ -37,35 +37,16 @@ const Loader = styled.div`
 `
 
 const Chart = styled.div`
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: white;
+    /* background-color: ; */
 
-  .radiocontainer label {
-    font-weight: 500;
-    border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid #9a0007;
-    &:hover{
-      transition: .3s;
-      background-color: #9a0007;
-    }
-  }
-  .radiocontainer input[type="radio"]:checked+label {
-    transition: .3s;
-    background-color: #9a0007;
-  }
   & svg path {
-    fill: transparent;
+    fill: ${props => props.theme.mapBackgroundColor};    
     stroke: ${props => props.theme.colors.black};
     stroke-width: 1px;
 
     :hover[continent='Europe'] {
-        fill: ${props => props.theme.colors.primary + '30'};
+      fill: ${props => props.theme.colors.secondary + '30'};
     }
   }
+
 `

@@ -9,5 +9,6 @@ export default {
     green: "#27CB73",
     yellow: '#F2DE66'
   },
-  backgroundColor:'#F3F5F9'
+  backgroundColor:'#F3F5F9',
+  mapBackgroundColor:'#C0DAF1'
 }
