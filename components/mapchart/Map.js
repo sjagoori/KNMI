@@ -67,15 +67,4 @@ const Chart = styled.div`
         fill: #ffcc0025;
     }
   }
-
-
-/* .hover-element{
-  path:hover {
-    fill: #ffcc0025;
-  }
-}
-
-  &svg {
-    background-color: #FFF
-  } */
 `
