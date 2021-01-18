@@ -59,12 +59,17 @@ const Chart = styled.div`
     background-color: #9a0007;
   }
   & svg path {
-    /* fill: #1a1e28; */
+    fill: #1a1e28;
     stroke: #FFCC00;
-    stroke-width: .3px
+    stroke-width: 1px;
+
+    :hover:not([country='Antarctica']){
+        fill: #ffcc0025;
+    }
   }
 
-.hover-element{
+
+/* .hover-element{
   path:hover {
     fill: #ffcc0025;
   }
@@ -72,5 +77,5 @@ const Chart = styled.div`
 
   &svg {
     background-color: #FFF
-  }
+  } */
 `

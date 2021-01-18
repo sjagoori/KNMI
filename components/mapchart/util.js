@@ -15,8 +15,8 @@ export const handleMouseOver = (e, i) => {
 
   tt
     .append('p')
-    .text(i.areadesc)
-    .style('opacity', 1)
+    .text(i.properties.admin)
+    .style('opacity', i.properties.admin == 'Antarctica' ? 0 : 1)
     .style('background-color', 'white')
     .style('color', 'black')
     .style('position', 'absolute')

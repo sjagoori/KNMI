@@ -18,11 +18,6 @@ export function composer(data) {
     .attr("width", w)
     .attr("height", h);
 
-  //Load in GeoJSON data
-
-  console.log(mapData)
-
-
   //Bind data and create one path per GeoJSON feature
   svg.selectAll("path")
     .data(mapData.features)
@@ -31,9 +26,9 @@ export function composer(data) {
     .attr("d", path)
     .attr("stroke", "#FFF")
     .attr("fill", "#000")
+    .attr("country", d=> d.properties.admin)
     .on("mouseover", handleMouseOver)
-    .on("mouseout", handleMouseOut)
-    ;
+    .on("mouseout", handleMouseOut);
 
   return true
 }
