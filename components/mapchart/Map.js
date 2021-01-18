@@ -41,11 +41,16 @@ const Chart = styled.div`
   & svg path {
     transition: .2s;
     fill: ${props => props.theme.mapBackgroundColor};    
-    stroke: ${props => props.theme.colors.black};
+    stroke: ${props => props.theme.colors.black + '70'};
     stroke-width: 1px;
 
-    :hover[continent='Europe'] {
-      fill: ${props => props.theme.colors.secondary + '90'};
+    &[continent='Europe']{
+      fill: ${props => props.theme.colors.secondary + '40'};
+      stroke:${props => props.theme.colors.secondary};
+
+      :hover {
+        fill: ${props => props.theme.colors.secondary + '90'};
+      }
     }
   }
 

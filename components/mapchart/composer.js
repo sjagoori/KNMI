@@ -1,13 +1,13 @@
 import { select, geoMercator, geoPath, selectAll, json } from 'd3';
 import { generateHeadBlock, handleFilter, handleMouseOver, handleMouseOut, handleMouseMove } from './util';
 const mapData = require('assets/mapdata.json')
-export const projection = geoMercator().scale(900).center([13, 52])
+export const projection = geoMercator().scale(650).center([25, 60])
 
 
 export function composer(data) {
   //Width and height
-  var w = 800;
-  var h = 600;
+  var w = 700;
+  var h = 700;
 
   //Define path generator
   const path = geoPath().projection(projection)
