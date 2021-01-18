@@ -37,15 +37,15 @@ const Loader = styled.div`
 `
 
 const Chart = styled.div`
-    /* background-color: ; */
 
   & svg path {
+    transition: .2s;
     fill: ${props => props.theme.mapBackgroundColor};    
     stroke: ${props => props.theme.colors.black};
     stroke-width: 1px;
 
     :hover[continent='Europe'] {
-      fill: ${props => props.theme.colors.secondary + '30'};
+      fill: ${props => props.theme.colors.secondary + '90'};
     }
   }
 

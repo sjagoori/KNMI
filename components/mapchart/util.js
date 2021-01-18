@@ -1,6 +1,8 @@
 import { select, selectAll } from 'd3'
 import { projection } from './composer'
 
+
+
 /**
  * Function handles mouseover event
  * @see {@link https://bl.ocks.org/d3noob/a22c42db65eb00d4e369} - used reference
@@ -8,7 +10,9 @@ import { projection } from './composer'
  * @param {Object} i - data
  */
 export const handleMouseOver = (e, i) => {
-  const ttcontainer = select("body").append("div")
+  const ttcontainer = select("body")
+    .append("div")
+    .style('position', 'absolute')
 
   const tt = ttcontainer
     .attr("id", "tooltip")
@@ -23,8 +27,16 @@ export const handleMouseOver = (e, i) => {
     .style('padding', '5px')
     .style('border', '1px solid black')
     .style('border-radius', '5px')
-    .style('top', (e.pageY) + 'px')
-    .style('left', (e.pageX) + 'px')
+}
+
+/**
+ * Functon handles mousemove event
+ * @param {Event} e - event
+ */
+export const handleMouseMove = (e) => {
+  select("#tooltip")
+    .style('top', e.pageY + 'px')
+    .style('left', e.pageX + 'px')
 }
 
 /**
@@ -86,7 +98,7 @@ export const generateHeadBlock = (data) => {
     .text(data.lead)
 
   const radiocontainer = head.append('div')
-  .attr('class', 'radiocontainer')
+    .attr('class', 'radiocontainer')
     .style('display', 'flex')
     .style('flex-direction', 'column')
     .style('width', '300px')
@@ -103,8 +115,8 @@ export const generateHeadBlock = (data) => {
  */
 const generateOptions = (options, container) => {
   container.append('p')
-  .text('Select:')
-  .style('font-weight', '700')
+    .text('Select:')
+    .style('font-weight', '700')
 
   const group = container.append('div')
     .style('display', 'flex')
