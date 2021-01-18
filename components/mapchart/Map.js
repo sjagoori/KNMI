@@ -60,9 +60,15 @@ const Chart = styled.div`
   }
   & svg path {
     /* fill: #1a1e28; */
-    stroke: #000;
+    stroke: #FFCC00;
     stroke-width: .3px
   }
+
+.hover-element{
+  path:hover {
+    fill: #ffcc0025;
+  }
+}
 
   &svg {
     background-color: #FFF

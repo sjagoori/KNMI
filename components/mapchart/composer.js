@@ -30,8 +30,10 @@ export function composer(data) {
     .append("path")
     .attr("d", path)
     .attr("stroke", "#FFF")
-    .attr("fill", "#000");
-
+    .attr("fill", "#000")
+    .on("mouseover", handleMouseOver)
+    .on("mouseout", handleMouseOut)
+    ;
 
   return true
 }
