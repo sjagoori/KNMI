@@ -1,7 +1,8 @@
 import React from 'react'
 import { composer } from './composer'
 import CircularProgress from '@material-ui/core/CircularProgress';
-import styled from "styled-components"
+import styled, { ThemeProvider } from 'styled-components';
+import theme from 'styles/theme'
 
 export default class Map extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class Map extends React.Component {
     const state = this.state.state
     const loadState = <Loader><CircularProgress /></Loader>
 
-    return !state ? <><Chart id={this.props.id}>{loadState}</Chart></> : <><Chart id={this.props.id}></Chart></>
+    return !state ? <><ThemeProvider theme={theme}><Chart id={this.props.id}>{loadState}</Chart></ThemeProvider></> : <><ThemeProvider theme={theme}><Chart id={this.props.id}></Chart></ThemeProvider></>
   }
 }
 
@@ -59,12 +60,12 @@ const Chart = styled.div`
     background-color: #9a0007;
   }
   & svg path {
-    fill: #1a1e28;
-    stroke: #FFCC00;
+    fill: transparent;
+    stroke: ${props => props.theme.colors.black};
     stroke-width: 1px;
 
     :hover[continent='Europe'] {
-        fill: #ffcc0025;
+        fill: ${props => props.theme.colors.primary + '30'};
     }
   }
 `
