@@ -27,6 +27,7 @@ export function composer(data) {
     .attr("stroke", "#FFF")
     .attr("fill", "#000")
     .attr("country", d=> d.properties.admin)
+    .attr("continent", d=> d.properties.continent)
     .on("mouseover", handleMouseOver)
     .on("mouseout", handleMouseOut);
 

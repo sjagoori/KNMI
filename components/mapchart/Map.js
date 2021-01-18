@@ -63,7 +63,7 @@ const Chart = styled.div`
     stroke: #FFCC00;
     stroke-width: 1px;
 
-    :hover:not([country='Antarctica']){
+    :hover[continent='Europe'] {
         fill: #ffcc0025;
     }
   }
