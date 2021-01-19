@@ -19,7 +19,7 @@ export const handleMouseOver = (e, i) => {
 
   tt
     .append('p')
-    .text(i.properties.admin + ' ' + Math.round(d.properties.delta * 100))
+    .text(i.properties.admin + ' ' + Math.abs(Math.round(i.properties.delta * 100)))
     .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
     .style('background-color', 'white')
     .style('color', 'black')

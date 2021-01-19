@@ -26,7 +26,7 @@ export function composer(data) {
     .append("path")
     .attr("d", path)
     .style("stroke", "#000")
-    .style("fill", d => d.properties.continent == 'Europe' ? ("#ff0000" + Math.round(d.properties.delta * 100)) : '')
+    .style("fill", d => d.properties.continent == 'Europe' ? ("#ff0000" + Math.abs(Math.round(d.properties.delta * 100))) : '')
     .attr("country", d=> d.properties.admin)
     .attr("continent", d=> d.properties.continent)
     .on("mouseover", handleMouseOver)
