@@ -1,7 +1,7 @@
 import { select, geoMercator, geoPath, selectAll, json } from 'd3';
 import { generateHeadBlock, handleFilter, handleMouseOver, handleMouseOut, handleMouseMove } from './util';
 const mapData = require('assets/AQICN_data_coords.json')
-const mapDataBefore = require('assets/BEFORE.json')
+const mapDataBefore = require('assets/mapdata_2018.json')
 export const projection = geoMercator().scale(700).center([15, 63])
 
 export function composer(data) {

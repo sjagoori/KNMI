@@ -68,7 +68,7 @@ export const handleFilter = (data) => {
 
   var map = container.append("svg")
 
-  container.selectAll('svg').remove()
+  // container.selectAll('svg').remove()
 
   map.selectAll("path")
   .data(pick.features)
