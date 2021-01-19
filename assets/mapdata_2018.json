@@ -32279,7 +32279,7 @@
         "tiny": -99,
         "homepart": -99,
         "euMember": false,
-        "delta": 100,
+        "delta": -0.041666667,
         "centroid":{"longitude":54.236107 ,"latitude":-4.548056}
       },
       "geometry": {
@@ -34183,7 +34183,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": 2.333333333,
         "centroid":{"longitude":64.963051 ,"latitude":-19.020835}
       },
       "geometry": {
@@ -35025,7 +35025,7 @@
         "tiny": -99,
         "homepart": -99,
         "euMember": false,
-        "delta": 100,
+        "delta": 0.4,
         "centroid":{"longitude":49.214439 ,"latitude":-2.13125}
       },
       "geometry": {
@@ -39765,7 +39765,7 @@
         "tiny": 5,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": 0.69,
         "centroid":{"longitude":43.750298 ,"latitude":7.412841}
       },
       "geometry": null
@@ -56985,7 +56985,7 @@
         "tiny": 5,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": 0.69,
         "centroid":{"longitude":43.94236 ,"latitude":12.457777}
       },
       "geometry": null
@@ -60747,7 +60747,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": -0.827586207,
         "centroid":{"longitude":38.963745 ,"latitude":35.243322}
       },
       "geometry": {
@@ -65072,7 +65072,7 @@
         "tiny": 4,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": 0.69,
         "centroid":{"longitude":41.902916 ,"latitude":12.453389}
       },
       "geometry": null
