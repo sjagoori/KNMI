@@ -26,9 +26,9 @@ export function composer(data) {
     .append("path")
     .attr("d", path)
     .style("stroke", "#000")
-    .style("fill", d => d.properties.continent == 'Europe' ? ("#ff0000" + Math.abs(Math.round(d.properties.delta * 100))) : '')
-    .attr("country", d=> d.properties.admin)
-    .attr("continent", d=> d.properties.continent)
+    .style("fill", d => d.properties.euMember && isNegative(d.properties.delta) ? getColor(true, d.properties.delta) : getColor(false, d.properties.delta) )
+    .attr("country", d => d.properties.admin)
+    .attr("continent", d => d.properties.continent)
     .on("mouseover", handleMouseOver)
     .on("mouseout", handleMouseOut)
     .on('mousemove', handleMouseMove)
@@ -36,3 +36,6 @@ export function composer(data) {
   return true
 }
 
+const isNegative = a => { return a < 0 }
+
+const getColor = (a, b) => { return (a ? '#FF0000' : '#008000') + + Math.abs(Math.round(b * 100)) }
