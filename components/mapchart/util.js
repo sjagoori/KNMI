@@ -66,9 +66,11 @@ export const handleFilter = (data) => {
   const path = geoPath().projection(projection)
   console.log(pick)
 
-  var map = container.append("svg")
+  container.selectAll('svg').remove()
 
-  // container.selectAll('svg').remove()
+  var map = container.append("svg").attr("width", 900)
+  .attr("height", 800);
+
 
   map.selectAll("path")
   .data(pick.features)

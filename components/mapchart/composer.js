@@ -14,28 +14,6 @@ export function composer(data) {
 
   let container = select("#" + data.chartId).append('div')
 
-  //Create SVG
-  var map = container
-    .append("svg")
-    .attr("width", w)
-    .attr("height", h);
-
-  //Bind data and create one path per GeoJSON feature
-  map.selectAll("path")
-    .data(mapData.features)
-    .enter()
-    .append("path")
-    .attr("d", path)
-    .attr('id', 'map')
-    .style("stroke", "#000")
-    .style("fill", d => d.properties.euMember && isNegative(d.properties.delta) ? getColor(true, d.properties.delta) : getColor(false, d.properties.delta))
-    .attr("country", d => d.properties.admin)
-    .attr("continent", d => d.properties.continent)
-    .on("mouseover", handleMouseOver)
-    .on("mouseout", handleMouseOut)
-    .on('mousemove', handleMouseMove)
-
-
   const radiocontainer = container.append('div')
     .attr('class', 'radiocontainer')
     .style('display', 'flex')
@@ -64,6 +42,27 @@ export function composer(data) {
       .style('display', 'block')
       .style('cursor', 'pointer')
   })
+
+  //Create SVG
+  var map = container
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+  //Bind data and create one path per GeoJSON feature
+  map.selectAll("path")
+    .data(mapData.features)
+    .enter()
+    .append("path")
+    .attr("d", path)
+    .attr('id', 'map')
+    .style("stroke", "#000")
+    .style("fill", d => d.properties.euMember && isNegative(d.properties.delta) ? getColor(true, d.properties.delta) : getColor(false, d.properties.delta))
+    .attr("country", d => d.properties.admin)
+    .attr("continent", d => d.properties.continent)
+    .on("mouseover", handleMouseOver)
+    .on("mouseout", handleMouseOut)
+    .on('mousemove', handleMouseMove)
 
   selectAll('input[name="radiogroup"').on('change', d => {
     handleFilter({
