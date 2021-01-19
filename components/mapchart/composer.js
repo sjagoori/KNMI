@@ -18,15 +18,17 @@ export function composer(data) {
     .attr('class', 'radiocontainer')
     .style('display', 'flex')
     .style('flex-direction', 'column')
-    .style('width', '300px')
+    .style('width', '900px')
     .style('justify-content', 'space-between')
+    .style('align-items', 'center')
 
   const group = radiocontainer.append('div')
     .style('display', 'flex')
-    .style('width', '180px')
+    .style('width', '350px')
+    .style('margin', '15px')
     .style('justify-content', 'space-between')
 
-  let options = ['before', 'after']
+  let options = ['before COVID-19', 'During COVID-19']
 
   options.map((key, index) => {
     group.append('input')
@@ -70,7 +72,7 @@ export function composer(data) {
       event: d,
       primarySet: mapData,
       secondarySet: mapDataBefore,
-      secondaryOption: 'before'
+      secondaryOption: 'before COVID-19'
     })
   })
 
