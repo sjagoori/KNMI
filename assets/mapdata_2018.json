@@ -8410,7 +8410,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 99,
+        "delta": 0.590909091,
         "centroid":{"longitude":53.709807 ,"latitude":27.953389}
       },
       "geometry": {
@@ -37608,7 +37608,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": -0.153846154,
         "centroid":{"longitude":42.602636 ,"latitude":20.902977}
       },
       "geometry": {
@@ -38973,7 +38973,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": true,
-        "delta": 99,
+        "delta": -0.5,
         "centroid":{"longitude":55.169438 ,"latitude":23.881275}
 
       },
@@ -39203,7 +39203,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": true,
-        "delta": 99,
+        "delta": -0.145833333,
         "centroid":{"longitude":56.879635 ,"latitude":24.603189}
       },
       "geometry": {
@@ -39837,7 +39837,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": -0.576923077,
         "centroid":{"longitude":47.411631 ,"latitude":28.369885}
       },
       "geometry": {
@@ -41062,7 +41062,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.2291666666666666,
+        "delta": -0.157894737,
         "centroid":{"longitude":41.608635 ,"latitude":21.745275}
       },
       "geometry": {
@@ -42084,7 +42084,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": -0.533333333,
         "centroid":{"longitude":42.708678 ,"latitude":19.37439}
       },
       "geometry": {
@@ -57431,7 +57431,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 100,
+        "delta": 0.600,
         "centroid":{"longitude":44.016521 ,"latitude":21.005859}
       },
       "geometry": {
@@ -61713,7 +61713,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": -1,
+        "delta": -0.679245283,
         "centroid":{"longitude":48.379433 ,"latitude":31.16558}
       },
       "geometry": {
