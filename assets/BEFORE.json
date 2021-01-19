@@ -1,4 +1,5 @@
 {
+  "d": "before",
   "type": "FeatureCollection",
   "features": [{
       "type": "Feature",
@@ -45094,7 +45095,7 @@
         "abbrev_len": 5,
         "tiny": -99,
         "homepart": 1,
-        "delta": 0.20967741935483866 ,
+        "delta": 1.2 ,
         "centroid":{"longitude":52.132633 ,"latitude":5.291266},
         "euMember": true
       },

@@ -1,4 +1,4 @@
-import { select, selectAll } from 'd3'
+import { select, geoMercator, geoPath, selectAll, json } from 'd3';
 import { projection } from './composer'
 
 
@@ -62,22 +62,36 @@ export const handleMouseOut = () => {
  */
 export const handleFilter = (data) => {
   const pick = data.event.target.defaultValue == data.secondaryOption ? data.secondarySet : data.primarySet
-  const map = select("#" + data.id)
+  const container = select("#" + data.id)
+  const path = geoPath().projection(projection)
+  console.log(pick)
 
-  map.selectAll('circle').remove()
-  map.select('svg').selectAll('circle')
-    .data(pick)
-    .enter()
-    .append('circle')
-    .attr('cx', d => projection([d.location.longitude, d.location.latitude])[0])
-    .attr('cy', d => projection([d.location.longitude, d.location.latitude])[1])
-    .attr('r', '4px')
-    .attr('stroke', 'black')
-    .style('stroke-width', '.5px')
-    .attr('fill', '#FF333D')
-    .on('mouseover', handleMouseOver)
-    .on('mouseout', handleMouseOut)
+  var map = container.append("svg")
+
+  container.selectAll('svg').remove()
+
+  map.selectAll("path")
+  .data(pick.features)
+  .enter()
+  .append("path")
+  .attr("d", path)
+  .attr('id', 'map')
+  .style("stroke", "#000")
+  .style("fill", d => d.properties.euMember && isNegative(d.properties.delta) ? getColor(true, d.properties.delta) : getColor(false, d.properties.delta))
+  .attr("country", d => d.properties.admin)
+  .attr("continent", d => d.properties.continent)
+  .on("mouseover", handleMouseOver)
+  .on("mouseout", handleMouseOut)
+  .on('mousemove', handleMouseMove)
+
+
 }
+
+const isNegative = a => { return a < 0 }
+
+const getColor = (a, b) => { return (a ? '#FF0000' : '#008000') + (getAbsolute(b) > 100 && getAbsolute(b) > 0 ? 99 : getAbsolute(b) < 20 && getAbsolute(b) > 0 ? 20 : getAbsolute(b)) }
+
+const getAbsolute = a => { return Math.abs(Math.round(a * 100)) }
 
 /**
  * Function generates headblock 

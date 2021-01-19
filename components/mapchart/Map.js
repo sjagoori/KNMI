@@ -54,4 +54,22 @@ const Chart = styled.div`
     }
   }
 
+  .radiocontainer label {
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid ${props => props.theme.colors.primary};
+    
+    &:hover{
+      transition: .3s;
+      background-color: ${props => props.theme.colors.primary};
+    }
+  }
+  .radiocontainer input[type="radio"]:checked+label {
+    transition: .3s;
+    background-color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.white};
+  }
 `
