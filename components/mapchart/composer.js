@@ -38,4 +38,4 @@ export function composer(data) {
 
 const isNegative = a => { return a < 0 }
 
-const getColor = (a, b) => { return (a ? '#FF0000' : '#008000') + + Math.abs(Math.round(b * 100)) }
+const getColor = (a, b) => { return (a ? '#FF0000' : '#008000') + (Math.abs(Math.round(b * 100)) > 100 ? 99 : Math.abs(Math.round(b * 100))) }
