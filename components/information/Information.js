@@ -11,7 +11,7 @@ export default class Information extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Container>
+        <Container id={this.props.id}>
           <InfoContainer>
             <Title>{this.props.title}</Title>
             <InfoDescription>{this.props.infoDescription}</InfoDescription>
