@@ -25,7 +25,9 @@ export const handleMouseOver = (e, i) => {
 
   tt
     .append('p')
-    .text(i.properties.admin + ' ' + Math.abs(Math.round(i.properties.delta * 100)))
+    .text(i.properties.admin)
+    .style('text-align', 'center')
+    .style('margin', '0px 5px 0px 5px')
 
   const table = tt
     .append('table')
