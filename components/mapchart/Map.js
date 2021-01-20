@@ -37,6 +37,11 @@ const Loader = styled.div`
 `
 
 const Chart = styled.div`
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
   & svg path {
     fill: ${props => props.theme.mapBackgroundColor};    
