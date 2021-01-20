@@ -24,7 +24,7 @@ export default class Map extends React.Component {
     const state = this.state.state
     const loadState = <Loader><CircularProgress /></Loader>
 
-    return !state ? <><ThemeProvider theme={theme}><Chart id={this.props.id}>{loadState}</Chart></ThemeProvider></> : <><ThemeProvider theme={theme}><Chart id={this.props.id}></Chart></ThemeProvider></>
+    return !state ? <><ThemeProvider theme={theme}><Container><Chart id={this.props.id}>{loadState}</Chart></Container></ThemeProvider></> : <><ThemeProvider theme={theme}><Container><Chart id={this.props.id}></Chart></Container></ThemeProvider></>
   }
 }
 
@@ -34,6 +34,17 @@ const Loader = styled.div`
   top: 50%; 
   transform: translateY(-50%); 
   transform: translate(-50%, -50%);
+`
+
+const Container = styled.div`
+  width: 100%;
+  background-color: ${props => props.theme.mapBackgroundColor};    
+  padding: 50px;
+
+  @media (max-width: 1300px) {
+    padding: 0;
+  }
+
 `
 
 const Chart = styled.div`

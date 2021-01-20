@@ -17,6 +17,7 @@ export function composer(data) {
     .attr('class', 'topcontainer')
     .style('display', 'flex')
     .style('justify-content', 'space-between')
+    .style('margin-bottom', '20px')
 
   topcontainer.append('div')
 
