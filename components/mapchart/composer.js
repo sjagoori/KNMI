@@ -2,11 +2,13 @@ import { select, geoMercator, geoPath, selectAll, json } from 'd3';
 import { generateHeadBlock, handleFilter, handleMouseOver, handleMouseOut, handleMouseMove } from './util';
 const mapData = require('assets/AQICN_data_coords.json')
 const mapDataBefore = require('assets/mapdata_2018.json')
-export const projection = geoMercator().scale(700).center([15, 63])
+// export const projection = geoMercator().scale(700).center([15, 63])
+export const projection = geoMercator().scale(700).center([6, 63])
+
 
 export function composer(data) {
   //Width and height
-  var w = 900;
+  var w = '99vw';
   var h = 800;
 
   //Define path generator
@@ -18,9 +20,10 @@ export function composer(data) {
     .attr('class', 'radiocontainer')
     .style('display', 'flex')
     .style('flex-direction', 'column')
-    .style('width', '900px')
+    .style('width', '99%')
     .style('justify-content', 'space-between')
     .style('align-items', 'center')
+    
 
   const group = radiocontainer.append('div')
     .style('display', 'flex')
@@ -49,7 +52,8 @@ export function composer(data) {
   var map = container
     .append("svg")
     .attr("width", w)
-    .attr("height", h);
+    .attr("height", h)
+    .style("margin-left", "0.45vw");
 
   //Bind data and create one path per GeoJSON feature
   map.selectAll("path")

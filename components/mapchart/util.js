@@ -68,9 +68,10 @@ export const handleFilter = (data) => {
 
   container.selectAll('svg').remove()
 
-  var map = container.append("svg").attr("width", 900)
-  .attr("height", 800);
-
+  var map = container.append("svg").attr("width", '99vw')
+  .attr("height", 800)
+  .style("margin-left", "0.45vw")
+;
 
   map.selectAll("path")
   .data(pick.features)
