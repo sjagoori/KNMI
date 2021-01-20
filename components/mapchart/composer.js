@@ -1,20 +1,15 @@
 import { select, geoMercator, geoPath, selectAll, json } from 'd3';
-import { generateHeadBlock, handleFilter, handleMouseOver, handleMouseOut, handleMouseMove } from './util';
+import { handleFilter, handleMouseOver, handleMouseOut, handleMouseMove, isNegative, getColor } from './util';
 const mapData = require('assets/AQICN_data_coords.json')
 const mapDataBefore = require('assets/mapdata_2018.json')
-// export const projection = geoMercator().scale(700).center([15, 63])
-export const projection = geoMercator().scale(700).center([6, 63])
 
+export const projection = geoMercator().scale(700).center([6, 63])
+export const path = geoPath().projection(projection)
+export const w = '99vw'
+export const h = 800
 
 export function composer(data) {
-  //Width and height
-  var w = '99vw';
-  var h = 800;
-
-  //Define path generator
-  const path = geoPath().projection(projection)
-
-  let container = select("#" + data.chartId).append('div')
+  const container = select("#" + data.chartId).append('div')
 
   const radiocontainer = container.append('div')
     .attr('class', 'radiocontainer')
@@ -23,7 +18,7 @@ export function composer(data) {
     .style('width', '99%')
     .style('justify-content', 'space-between')
     .style('align-items', 'center')
-    
+
 
   const group = radiocontainer.append('div')
     .style('display', 'flex')
@@ -31,7 +26,7 @@ export function composer(data) {
     .style('margin', '15px')
     .style('justify-content', 'space-between')
 
-  let options = ['before COVID-19', 'During COVID-19']
+  let options = ['Before COVID-19', 'During COVID-19']
 
   options.map((key, index) => {
     group.append('input')
@@ -48,14 +43,12 @@ export function composer(data) {
       .style('cursor', 'pointer')
   })
 
-  //Create SVG
   var map = container
     .append("svg")
     .attr("width", w)
     .attr("height", h)
     .style("margin-left", "0.45vw");
 
-  //Bind data and create one path per GeoJSON feature
   map.selectAll("path")
     .data(mapData.features)
     .enter()
@@ -76,15 +69,9 @@ export function composer(data) {
       event: d,
       primarySet: mapData,
       secondarySet: mapDataBefore,
-      secondaryOption: 'before COVID-19'
+      secondaryOption: options[0]
     })
   })
 
   return true
 }
-
-const isNegative = a => { return a < 0 }
-
-const getColor = (a, b) => { return (a ? '#008000' : '#FF0000') + (getAbsolute(b) > 100 && getAbsolute(b) > 0 ? 99 : getAbsolute(b) < 20 && getAbsolute(b) > 0 ? 20 : getAbsolute(b)) }
-
-const getAbsolute = a => { return Math.abs(Math.round(a * 100)) }
