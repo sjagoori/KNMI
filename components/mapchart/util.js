@@ -13,22 +13,23 @@ export const handleMouseOver = (e, i) => {
     .append("div")
     .style('position', 'absolute')
     .style('background-color', 'white')
-    .style('color', 'black')
-    .style('padding', '5px')
-    .style('border', '1px solid black')
     .style('border-radius', '5px')
+    .style('border', '1px solid black')
+    .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
+
 
   const tt = ttcontainer
     .attr("id", "tooltip")
 
   tt
     .append('p')
-    .text(i.properties.admin + ' ' + Math.round(i.properties.delta * 100) / 100 + '%')
-    .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
+    .text(i.properties.admin + ' ' + Math.abs(Math.round(i.properties.delta * 100)))
 
-  const table = ttcontainer
+  const table = tt
     .append('table')
     .attr('class', 'infotable')
+    .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
+
 
   const headerRow = table
     .append('tr')
@@ -45,6 +46,7 @@ export const handleMouseOver = (e, i) => {
 
   const marchRow = table
     .append('tr')
+    .style('border', '1px solid red')
 
   // 2019
   marchRow
