@@ -12,20 +12,113 @@ export const handleMouseOver = (e, i) => {
   const ttcontainer = select("body")
     .append("div")
     .style('position', 'absolute')
+    .style('background-color', 'white')
+    .style('color', 'black')
+    .style('padding', '5px')
+    .style('border', '1px solid black')
+    .style('border-radius', '5px')
 
   const tt = ttcontainer
     .attr("id", "tooltip")
 
   tt
     .append('p')
-    .text(i.properties.admin + ' ' + Math.round(i.properties.delta * 100)/100 + '%' )
+    .text(i.properties.admin + ' ' + Math.round(i.properties.delta * 100) / 100 + '%')
     .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
-    .style('background-color', 'white')
-    .style('color', 'black')
-    .style('position', 'absolute')
-    .style('padding', '5px')
-    .style('border', '1px solid black')
-    .style('border-radius', '5px')
+
+  const table = ttcontainer
+    .append('table')
+    .attr('class', 'infotable')
+
+  const headerRow = table
+    .append('tr')
+
+  headerRow
+    .append('th')
+    .attr("colspan", 2)
+    .text('2019')
+
+  headerRow
+    .append('th')
+    .attr("colspan", 2)
+    .text('2020')
+
+  const marchRow = table
+    .append('tr')
+
+  // 2019
+  marchRow
+    .append('td')
+    .text('March')
+  marchRow
+    .append('td')
+    .text('%')
+
+  // 2020
+  marchRow
+    .append('td')
+    .text('March')
+  marchRow
+    .append('td')
+    .text('%')
+
+
+  const aprilRow = table
+    .append('tr')
+
+  // 2019
+  aprilRow
+    .append('td')
+    .text('April')
+  aprilRow
+    .append('td')
+    .text('%')
+
+  // 2020
+  aprilRow
+    .append('td')
+    .text('April')
+  aprilRow
+    .append('td')
+    .text('%')
+
+  const mayRow = table
+    .append('tr')
+
+  // 2019
+  mayRow
+    .append('td')
+    .text('May')
+  mayRow
+    .append('td')
+    .text('%')
+
+  // 2020
+  mayRow
+    .append('td')
+    .text('May')
+  mayRow
+    .append('td')
+    .text('%')
+
+  const juneRow = table
+    .append('tr')
+
+  // 2019
+  juneRow
+    .append('td')
+    .text('June')
+  juneRow
+    .append('td')
+    .text('%')
+
+  // 2020
+  juneRow
+    .append('td')
+    .text('June')
+  juneRow
+    .append('td')
+    .text('%')
 }
 
 /**
@@ -66,23 +159,23 @@ export const handleFilter = (data) => {
   container.selectAll('svg').remove()
 
   const map = container.append("svg").attr("width", w)
-  .attr("height", h)
-  .style("margin-left", "0.45vw")
-;
+    .attr("height", h)
+    .style("margin-left", "0.45vw")
+    ;
 
   map.selectAll("path")
-  .data(pick.features)
-  .enter()
-  .append("path")
-  .attr("d", path)
-  .attr('id', 'map')
-  .style("stroke", "#000")
-  .style("fill", d => d.properties.euMember && isNegative(d.properties.delta) ? getColor(true, d.properties.delta) : getColor(false, d.properties.delta))
-  .attr("country", d => d.properties.admin)
-  .attr("continent", d => d.properties.continent)
-  .on("mouseover", handleMouseOver)
-  .on("mouseout", handleMouseOut)
-  .on('mousemove', handleMouseMove)
+    .data(pick.features)
+    .enter()
+    .append("path")
+    .attr("d", path)
+    .attr('id', 'map')
+    .style("stroke", "#000")
+    .style("fill", d => d.properties.euMember && isNegative(d.properties.delta) ? getColor(true, d.properties.delta) : getColor(false, d.properties.delta))
+    .attr("country", d => d.properties.admin)
+    .attr("continent", d => d.properties.continent)
+    .on("mouseover", handleMouseOver)
+    .on("mouseout", handleMouseOut)
+    .on('mousemove', handleMouseMove)
 }
 
 export const isNegative = a => { return a < 0 }
