@@ -32,15 +32,16 @@ export default class Information extends Component {
 }
 
 const Container = styled.div`
-  max-width: 85vw;
+  width: 85vw;
   height: 500px;
 
-  display: flex;
-  justify-conten: center;
-  flex-direction: row;
+  margin-left: 50%;
+  transform: translateX(-50%);
 
-  margin: 40px;
-  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
   padding: 15px;
 `
 const InfoContainer = styled.div`
