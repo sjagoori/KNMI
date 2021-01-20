@@ -11,14 +11,32 @@ export const h = 800
 export function composer(data) {
   const container = select("#" + data.chartId).append('div')
 
-  const radiocontainer = container.append('div')
-    .attr('class', 'radiocontainer')
+  const topcontainer = container.append('div')
+    .attr('class', 'topcontainer')
     .style('display', 'flex')
-    .style('flex-direction', 'column')
-    .style('width', '99%')
     .style('justify-content', 'space-between')
-    .style('align-items', 'center')
 
+  topcontainer.append('div')
+
+  const radiocontainer = topcontainer.append('div')
+    .attr('class', 'radiocontainer')
+
+  const legend = topcontainer.append('div')
+  .style('display', 'flex')
+  .style('align-items', 'center')
+  .style('justify-content', 'space-between')
+
+  legend.append('span').text('Increase')
+
+  legend.append('div')
+    .style('width', '200px')
+    .style('height', '10px')
+    .attr('id', 'legendBox')
+
+    .style('background', 'linear-gradient(to right, #ff0000, #00ff00)')
+
+
+  legend.append('span').text('Decrease')
 
   const group = radiocontainer.append('div')
     .style('display', 'flex')

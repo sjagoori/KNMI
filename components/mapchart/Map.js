@@ -53,6 +53,21 @@ const Chart = styled.div`
     fill: ${props => props.theme.mapBackgroundColor};    
   }
 
+  .topcontainer{
+    border: 1px solid red;
+    padding: 0px 10px 0px 10px;
+
+    div {
+      border: 1px solid black;  
+      min-width: 25%;
+
+      @media (max-width: 1300px) {
+      min-width: 0;
+
+      }
+    }
+  }
+
   .radiocontainer label {
     font-weight: 500;
     border-radius: 5px;
