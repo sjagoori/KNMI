@@ -17,10 +17,14 @@ Import and implement the component.
 import Information from 'components/information/Information'
 
 <Information
-    title='Important title'
-    infoDescriptionSecondary='Some text here'
-    infoDescriptionSecondary='Some additional text here'
-    imgUrl='https://images.unsplash.com/photo-1581626221838-9715c0e06049?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'
+      title='What is NO₂ and what are the effects?'
+      infoDescription='Nitrogen Dioxide (NO₂) is one of the highly reactive gases and gets primarily in the air from the burning of fuel. It forms from emissions from gas-stoves, cars, trucks and buses, power plants, and off-road equipment.'
+      infoDescriptionSecondary='Breathing air with high concentration of NO₂ can irritate airways in the human repiratory system. Short exposure can aggravate patients with respiratory diseases. Longer exposures to elevated concentratinos of NO₂ may contribute to the development of asthma.'
+      imgUrl='https://i.ibb.co/Kz5s0KT/tropomi-map-NO2.jpg'
+      sources={{
+        source1: { url: 'https://aqicn.org/scale', label: 'AQICN severity levels (20-01-2021)'},
+        source2: { url: 'https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2', label: 'epa.gov (20-01-2021)'}
+      }}
 />
 ```
 
@@ -35,6 +39,22 @@ import Information from 'components/information/Information'
 
 All notable changes to this component will be documented in this file.
 The format adheres to the template from [Shabier](github.com/sjagoori).
+
+## 1.0.3
+
+### Added
+- Fixed centering
+
+[Developer]('github.com/sjagoori')
+
+## 1.0.2
+
+### Added
+- Added sources
+- Updated changelog
+
+### Removed
+- Removed test styling
 
 ## 1.0.1
 
