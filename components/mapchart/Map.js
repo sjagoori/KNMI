@@ -54,11 +54,9 @@ const Chart = styled.div`
   }
 
   .topcontainer{
-    border: 1px solid red;
     padding: 0px 10px 0px 10px;
 
     div {
-      border: 1px solid black;  
       min-width: 25%;
 
       @media (max-width: 1300px) {
