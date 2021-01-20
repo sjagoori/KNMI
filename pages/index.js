@@ -1,6 +1,8 @@
+import { Component } from 'react'
 import Navbar from 'components/navbar/Navbar'
 import Hero from 'components/hero/Hero'
 import Information from 'components/information/Information'
+import Map from 'components/mapchart/Map'
 
 export default function Home() {
   return (
@@ -34,6 +36,12 @@ export default function Home() {
           source1: { url: 'https://aqicn.org/scale', label: 'AQICN severity levels (20-01-2021)' },
           source2: { url: 'https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2', label: 'epa.gov (20-01-2021)' }
         }}
+      />
+
+      <Map
+        id='container'
+        title='Title'
+        lead='description'
       />
     </>
   )
