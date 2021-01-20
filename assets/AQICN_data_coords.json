@@ -773,7 +773,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": 99,
-        "centroid":{"longitude":41.153332 ,"latitude":20.168331}
+        "centroid":{"longitude":41.153332 ,"latitude":20.168331},
+        "monthly": {"m2020":
+          {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        },
+        "m2019": {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -6426,7 +6439,20 @@
         "homepart": 1,
         "delta": -0.5515151515151515,
         "centroid":{"longitude":47.516231 ,"latitude":14.550072},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 6.4,
+          "april": 9.2,
+          "may": 3.7,
+          "june": 4.6
+        },
+        "m2019": {
+          "march": 28.4,
+          "april": 16.0,
+          "may": 3.7,
+          "june": 7.8
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -6918,7 +6944,20 @@
         "homepart": 1,
         "delta": -0.2673267326732673,
         "centroid":{"longitude":50.503887 ,"latitude":4.469936},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 9.2,
+          "april": 9.6,
+          "may": 2.8,
+          "june": 7.4
+        },
+        "m2019": {
+          "march": 14.2,
+          "april": 10.1,
+          "may": 6.9,
+          "june": 10.6
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -8410,7 +8449,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 0.034482759,
+        "delta": 99,
         "centroid":{"longitude":53.709807 ,"latitude":27.953389}
       },
       "geometry": {
@@ -15624,16 +15663,16 @@
         "adm0_a3_us": "CHE",
         "adm0_a3_un": -99,
         "adm0_a3_wb": -99,
-        "continent": "Europa",
-        "region_un": "Europa",
-        "subregion": "Western Europa",
-        "region_wb": "Europa & Central Asia",
+        "continent": "Europe",
+        "region_un": "Europe",
+        "subregion": "Western Europe",
+        "region_wb": "Europe & Central Asia",
         "name_len": 11,
         "long_len": 11,
         "abbrev_len": 6,
         "tiny": -99,
         "homepart": 1,
-        "delta": 0,
+        "delta": -0.4415584415584416,
         "centroid":{"longitude":46.818188 ,"latitude":8.227512},
         "euMember": false
       },
@@ -20748,7 +20787,20 @@
         "abbrev_len": 6,
         "tiny": -99,
         "homepart": 1,
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 1.7,
+          "april": 2.0,
+          "may": 9.0,
+          "june": 6.1
+        },
+        "m2019": {
+          "march": 6.6,
+          "april": 6.2,
+          "may": 4.3,
+          "june": 3.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -20846,7 +20898,20 @@
         "homepart": 1,
         "delta": -0.19736842105263158 ,
         "euMember": true,
-        "centroid":{"longitude":35.126413 ,"latitude":33.429859}
+        "centroid":{"longitude":35.126413 ,"latitude":33.429859},
+        "monthly": {"m2020":
+          {
+          "march": 1.7,
+          "april": 2.0,
+          "may": 9.0,
+          "june": 6.1
+        },
+        "m2019": {
+          "march": 6.6,
+          "april": 6.2,
+          "may": 4.3,
+          "june": 3.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -20945,7 +21010,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": -0.49206349206349204,
-        "centroid":{"longitude":49.817492 ,"latitude":15.472962}
+        "centroid":{"longitude":49.817492 ,"latitude":15.472962},
+        "monthly": {"m2020":
+          {
+          "march": 3.6,
+          "april": 2.0,
+          "may": 4.9,
+          "june": 6.1
+        },
+        "m2019": {
+          "march": 21.8,
+          "april": 21.7,
+          "may": 8.1,
+          "june": 9.3
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -21110,7 +21188,20 @@
         "homepart": 1,
         "delta": -0.6666666666666666,
         "centroid":{"longitude":35.126413 ,"latitude":33.429859},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 5.5,
+          "april":6.4,
+          "may": 3.2,
+          "june": 8.7
+        },
+        "m2019": {
+          "march": 11.9,
+          "april": 15.8,
+          "may": 11.0,
+          "june": 5.1
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22967,7 +23058,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": -0.105263158,
-        "centroid":{"longitude":40.463667 ,"latitude":-3.74922}
+        "centroid":{"longitude":40.463667 ,"latitude":-3.74922},
+        "monthly": {"m2020":
+          {
+          "march": 2.8,
+          "april": 2.8,
+          "may": 4.6,
+          "june": 3.7
+        },
+        "m2019": {
+          "march": 5.4,
+          "april": 6.2,
+          "may": 5.5,
+          "june": 4.6
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23780,7 +23884,20 @@
         "homepart": 1,
         "delta": -0.41975308641975306 ,
         "centroid":{"longitude":61.92411 ,"latitude":25.748151},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 6.6,
+          "april": 4.4,
+          "may": 4.8,
+          "june": 7.1
+        },
+        "m2019": {
+          "march": 4.3,
+          "april": 12.0,
+          "may": 8.5,
+          "june": 8.0
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24375,7 +24492,20 @@
         "homepart": 1,
         "delta": 0.16666666666666666 ,
         "centroid":{"longitude":46.227638 ,"latitude":2.213749},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 1.7,
+          "april": 2.0,
+          "may": 9.0,
+          "june": 6.1
+        },
+        "m2019": {
+          "march": 5.7,
+          "april": 5.9,
+          "may": 7.0,
+          "june": 4.6
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25248,7 +25378,20 @@
         "homepart": 1,
         "delta": -0.5445544554455446,
         "centroid":{"longitude":55.378051 ,"latitude":-3.435973},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 5.1,
+          "april": 3.7,
+          "may": 4.6,
+          "june": 4.6
+        },
+        "m2019": {
+          "march": 8.7,
+          "april": 4.2,
+          "may": 3.2,
+          "june": 5.1
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26785,7 +26928,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": -0.555555556,
-        "centroid": {"longitude":39.074208 ,"latitude":21.824312}
+        "centroid": {"longitude":39.074208 ,"latitude":21.824312},
+        "monthly": {"m2020":
+          {
+          "march": 2.3,
+          "april": 3.2,
+          "may": 3.2,
+          "june": 4.2
+        },
+        "m2019": {
+          "march": 7.4,
+          "april": 6.2,
+          "may": 5.7,
+          "june": 5.1
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -29237,7 +29393,20 @@
         "homepart": 1,
         "delta": 5.157894736842105 ,
         "centroid":{"longitude":61.92411 ,"latitude":25.748151},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 11.7,
+          "april": 9.2,
+          "may": 4.1,
+          "june": 5.1
+        },
+        "m2019": {
+          "march": 28.7,
+          "april": 15.1,
+          "may": 13.7,
+          "june": 14.5
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -29629,7 +29798,20 @@
         "homepart": 1,
         "delta": -0.265625 ,
         "centroid":{"longitude":47.162494 ,"latitude":19.503304},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 11.6,
+          "april": 6.3,
+          "may": 6.3,
+          "june": 7.5
+        },
+        "m2019": {
+          "march": 10.4,
+          "april": 8.6,
+          "may": 3.8,
+          "june": 6.6
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -32279,7 +32461,7 @@
         "tiny": -99,
         "homepart": -99,
         "euMember": false,
-        "delta": -0.038461538,
+        "delta": 1,
         "centroid":{"longitude":54.236107 ,"latitude":-4.548056}
       },
       "geometry": {
@@ -33397,7 +33579,20 @@
         "homepart": 1,
         "delta": -0.75 ,
         "centroid":{"longitude":53.41291 ,"latitude":-8.24389},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 12.2,
+          "april": 12.1,
+          "may": 4.5,
+          "june": 3.4
+        },
+        "m2019": {
+          "march": 9.9,
+          "april": 6.0,
+          "may": 5.9,
+          "june": 13.4
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -34183,7 +34378,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 0.8,
+        "delta": 1,
         "centroid":{"longitude":64.963051 ,"latitude":-19.020835}
       },
       "geometry": {
@@ -34525,7 +34720,20 @@
         "homepart": 1,
         "delta": -0.7582938388625592,
         "centroid":{"longitude":41.87194 ,"latitude":12.56738},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 4.6,
+          "april": 8.3,
+          "may": 6.9,
+          "june": 29.2
+        },
+        "m2019": {
+          "march": 33.9,
+          "april": 197,
+          "may": 15.6,
+          "june": 4.2
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -35025,7 +35233,7 @@
         "tiny": -99,
         "homepart": -99,
         "euMember": false,
-        "delta": -0.157894737,
+        "delta": 1,
         "centroid":{"longitude":49.214439 ,"latitude":-2.13125}
       },
       "geometry": {
@@ -37608,7 +37816,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.555555556,
+        "delta": 1,
         "centroid":{"longitude":42.602636 ,"latitude":20.902977}
       },
       "geometry": {
@@ -38973,8 +39181,21 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": true,
-        "delta": 0.418181818,
-        "centroid":{"longitude":55.169438 ,"latitude":23.881275}
+        "delta": 99,
+        "centroid":{"longitude":55.169438 ,"latitude":23.881275},
+        "monthly": {"m2020":
+          {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        },
+        "m2019": {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        }}
 
       },
       "geometry": {
@@ -39111,7 +39332,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": 0.793103448,
-        "centroid":{"longitude":49.815273 ,"latitude":6.129583}
+        "centroid":{"longitude":49.815273 ,"latitude":6.129583},
+        "monthly": {"m2020":
+          {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        },
+        "m2019": {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -39203,8 +39437,21 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": true,
-        "delta": 2.210526316,
-        "centroid":{"longitude":56.879635 ,"latitude":24.603189}
+        "delta": 99,
+        "centroid":{"longitude":56.879635 ,"latitude":24.603189},
+        "monthly": {"m2020":
+          {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        },
+        "m2019": {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -39765,7 +40012,7 @@
         "tiny": 5,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.69,
+        "delta": 1,
         "centroid":{"longitude":43.750298 ,"latitude":7.412841}
       },
       "geometry": null
@@ -39837,7 +40084,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 0.090909091,
+        "delta": 1,
         "centroid":{"longitude":47.411631 ,"latitude":28.369885}
       },
       "geometry": {
@@ -41062,7 +41309,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.333333333,
+        "delta": 1,
         "centroid":{"longitude":41.608635 ,"latitude":21.745275}
       },
       "geometry": {
@@ -41476,7 +41723,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": 0.723404255,
-        "centroid":{"longitude":35.937496 ,"latitude":14.375416}
+        "centroid":{"longitude":35.937496 ,"latitude":14.375416},
+        "monthly": {"m2020":
+          {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        },
+        "m2019": {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -42084,7 +42344,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.363636364,
+        "delta": 1,
         "centroid":{"longitude":42.708678 ,"latitude":19.37439}
       },
       "geometry": {
@@ -45096,7 +45356,20 @@
         "homepart": 1,
         "delta": 0.20967741935483866 ,
         "centroid":{"longitude":52.132633 ,"latitude":5.291266},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 7.6,
+          "april": 8.3,
+          "may": 10.6,
+          "june": 5.9
+        },
+        "m2019": {
+          "march": 9.5,
+          "april": 10.2,
+          "may": 2.1,
+          "june": 3.0
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50132,7 +50405,20 @@
         "homepart": 1,
         "delta": 0.2499999999999999 ,
         "centroid":{"longitude":39.399872 ,"latitude":-8.224454},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 5.4,
+          "april": 5.5,
+          "may": 4.0,
+          "june": 4.3
+        },
+        "m2019": {
+          "march": 7.2,
+          "april": 4.4,
+          "may": 5.3,
+          "june": 4.6
+        }}
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50892,7 +51178,20 @@
         "homepart": 1,
         "delta": 0.06818181818181814,
         "centroid":{"longitude":45.943161 ,"latitude":24.96676},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 6.6,
+          "april": 4.9,
+          "may": 9.0,
+          "june": 11.3
+        },
+        "m2019": {
+          "march": 21.5,
+          "april": 12.3,
+          "may": 15.1,
+          "june": 15.2
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -51077,16 +51376,16 @@
         "adm0_a3_us": "RUS",
         "adm0_a3_un": -99,
         "adm0_a3_wb": -99,
-        "continent": "Communism",
-        "region_un": "Communism",
-        "subregion": "Eastern Communism",
-        "region_wb": "Communism & Central Communism",
+        "continent": "Europe",
+        "region_un": "Europe",
+        "subregion": "Eastern Europe",
+        "region_wb": "Europe & Central Asia",
         "name_len": 6,
         "long_len": 18,
         "abbrev_len": 4,
         "tiny": -99,
         "homepart": 1,
-        "delta": 0,
+        "delta": -0.7906976744186046 ,
         "centroid":{"longitude":61.52401 ,"latitude":105.318756},
         "euMember": false
       },
@@ -56985,7 +57284,7 @@
         "tiny": 5,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.69,
+        "delta": 1,
         "centroid":{"longitude":43.94236 ,"latitude":12.457777}
       },
       "geometry": null
@@ -57431,7 +57730,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 0.0625,
+        "delta": 1,
         "centroid":{"longitude":44.016521 ,"latitude":21.005859}
       },
       "geometry": {
@@ -57854,7 +58153,20 @@
         "homepart": 1,
         "delta": -0.6181818181818182 ,
         "centroid":{"longitude":48.669026 ,"latitude":19.699024},
-        "euMember": true
+        "euMember": true,
+        "monthly": {"m2020":
+          {
+          "march": 8.3,
+          "april": 4.2,
+          "may": 10.1,
+          "june": 7.8
+        },
+        "m2019": {
+          "march": 22.4,
+          "april": 8.7,
+          "may": 7.4,
+          "june": 8.7
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -57991,7 +58303,20 @@
         "homepart": 1,
         "euMember": true,
         "delta": 0.069444444,
-        "centroid":{"longitude":46.151241 ,"latitude":14.995463}
+        "centroid":{"longitude":46.151241 ,"latitude":14.995463},
+        "monthly": {"m2020":
+          {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        },
+        "m2019": {
+          "march": 10.0,
+          "april": 10.0,
+          "may": 10.0,
+          "june": 10.0
+        }}
       },
       "geometry": {
         "type": "Polygon",
@@ -61713,7 +62038,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": 1.263157895,
+        "delta": 1,
         "centroid":{"longitude":48.379433 ,"latitude":31.16558}
       },
       "geometry": {
@@ -65072,7 +65397,7 @@
         "tiny": 4,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.69,
+        "delta": 1,
         "centroid":{"longitude":41.902916 ,"latitude":12.453389}
       },
       "geometry": null

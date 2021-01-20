@@ -71,7 +71,7 @@ export const handleMouseOver = (e, i) => {
 
   marchRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2019.march)
     .style('border-right', '1px solid #333')
 
   // 2020
@@ -80,7 +80,7 @@ export const handleMouseOver = (e, i) => {
     .text('March')
   marchRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2020.march)
 
   const aprilRow = table
     .append('tr')
@@ -91,7 +91,7 @@ export const handleMouseOver = (e, i) => {
     .text('April')
   aprilRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2019.april)
     .style('border-right', '1px solid #333')
 
   // 2020
@@ -100,7 +100,7 @@ export const handleMouseOver = (e, i) => {
     .text('April')
   aprilRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2020.april)
 
   const mayRow = table
     .append('tr')
@@ -112,7 +112,7 @@ export const handleMouseOver = (e, i) => {
 
   mayRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2019.may)
     .style('border-right', '1px solid #333')
 
   // 2020
@@ -121,7 +121,7 @@ export const handleMouseOver = (e, i) => {
     .text('May')
   mayRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2020.may)
 
   const juneRow = table
     .append('tr')
@@ -132,7 +132,7 @@ export const handleMouseOver = (e, i) => {
     .text('June')
   juneRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2019.june)
     .style('border-right', '1px solid #333')
 
 
@@ -142,7 +142,7 @@ export const handleMouseOver = (e, i) => {
     .text('June')
   juneRow
     .append('td')
-    .text('%')
+    .text(i.properties.monthly.m2020.june)
 }
 
 /**
