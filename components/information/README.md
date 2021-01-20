@@ -25,7 +25,7 @@ import Information from 'components/information/Information'
         source1: { url: 'https://aqicn.org/scale', label: 'AQICN severity levels (20-01-2021)'},
         source2: { url: 'https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2', label: 'epa.gov (20-01-2021)'}
       }}
-    />
+/>
 ```
 
 ## Dependencies
@@ -39,6 +39,13 @@ import Information from 'components/information/Information'
 
 All notable changes to this component will be documented in this file.
 The format adheres to the template from [Shabier](github.com/sjagoori).
+
+## 1.0.3
+
+### Added
+- Fixed centering
+
+[Developer]('github.com/sjagoori')
 
 ## 1.0.2
 
