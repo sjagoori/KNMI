@@ -30,17 +30,17 @@ export function composer(data) {
     .style('align-items', 'center')
     .style('justify-content', 'space-between')
 
-  legend.append('span').text('Increase')
+  legend.append('span').text('Increase').style('font-weight', '500')
 
   legend.append('div')
     .style('width', '200px')
-    .style('height', '10px')
+    .style('height', '20px')
+    .style('border-radius', '5px')
     .attr('id', 'legendBox')
 
     .style('background', 'linear-gradient(to right,' + theme.colors.red + ',' + theme.colors.green)
 
-
-  legend.append('span').text('Decrease')
+  legend.append('span').text('Decrease').style('font-weight', '500')
 
   const group = radiocontainer.append('div')
     .style('display', 'flex')
