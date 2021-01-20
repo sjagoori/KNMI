@@ -23,7 +23,7 @@ export const handleMouseOver = (e, i) => {
 
     .style('border-radius', '5px')
     .style('border', '1px solid black')
-    .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
+    .style('opacity', !i.properties.euMember ? 0 : 1)
 
 
   const tt = ttcontainer
@@ -39,7 +39,7 @@ export const handleMouseOver = (e, i) => {
   const table = tt
     .append('table')
     .attr('class', 'infotable')
-    .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
+    .style('opacity', !i.properties.euMember ? 0 : 1)
     .style('width', '100%')
 
 
