@@ -65,6 +65,7 @@ const Chart = styled.div`
     &:hover{
       transition: .3s;
       background-color: ${props => props.theme.colors.primary};
+      color: ${props => props.theme.colors.white};
     }
   }
   .radiocontainer input[type="radio"]:checked+label {
