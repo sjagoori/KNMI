@@ -27,10 +27,9 @@ export default class Chart extends Component {
     return (
       <>
         <Container  id={this.props.id}>
-          
-          {/* <ImageContainer>
+          <ImageContainer>
             <Image src={this.props.imgUrl} />
-          </ImageContainer> */}
+          </ImageContainer>
         </Container>
       </>
     )
