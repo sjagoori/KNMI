@@ -11,6 +11,8 @@ import theme from 'styles/theme'
 export const handleMouseOver = (e, i) => {
   const ttcontainer = select("body")
     .append("div")
+    .style('top', e.pageY + 'px')
+    .style('left', e.pageX + 'px')
     .style('position', 'absolute')
     .style('background-color', 'white')
     .style('border-radius', '5px')
