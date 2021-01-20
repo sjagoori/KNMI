@@ -1,12 +1,12 @@
-import Navbar from 'components/navbar/Navbar'
-import Hero from 'components/hero/Hero'
-import Information from 'components/information/Information'
+// import Navbar from 'components/navbar/Navbar'
+// import Hero from 'components/hero/Hero'
+// import Information from 'components/information/Information'
 import Chart from 'components/divergent/Chart'
 
 export default function Home() {
   return (
     <>
-      <Navbar
+      {/* <Navbar
         links={{
           link1: { label: 'Link', url: '#' },
           link2: { label: 'Link', url: '#' },
@@ -35,10 +35,11 @@ export default function Home() {
           source1: { url: 'https://aqicn.org/scale', label: 'AQICN severity levels (20-01-2021)' },
           source2: { url: 'https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2', label: 'epa.gov (20-01-2021)' }
         }}
-      />
+      /> */}
 
       <Chart
-        imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
+        id="aaa"
+      // imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
       />
 
 
