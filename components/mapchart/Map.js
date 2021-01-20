@@ -38,7 +38,7 @@ const Loader = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  background-color: ${props => props.theme.mapBackgroundColor};    
+  background-color: ${props => props.theme.colors.secondary + '20'};
   padding: 50px;
 
   @media (max-width: 1300px) {
@@ -58,7 +58,7 @@ const Chart = styled.div`
   }
 
   & svg path {
-    fill: ${props => props.theme.mapBackgroundColor};    
+    fill: ${props => props.theme.colors.secondary + '20'};
   }
 
   .topcontainer{
