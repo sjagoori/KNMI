@@ -9,25 +9,25 @@ export default class Information extends Component {
   }
 
   render() {
-      return (
-        <ThemeProvider theme={theme}>
-          <Container>
-            <InfoContainer>
-              <Title>{this.props.title}</Title>
-              <InfoDescription>{this.props.infoDescription}</InfoDescription>
-              <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
-              <Sources>
-                {Object.keys(this.props.sources).map((key, index) => {
-                  return <Link href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
-                })}
-              </Sources>
-            </InfoContainer>
-            <ImageContainer>
-              <Image src={this.props.imgUrl} />
-            </ImageContainer>
-          </Container>
-        </ThemeProvider>
-      )
+    return (
+      <ThemeProvider theme={theme}>
+        <Container>
+          <InfoContainer>
+            <Title>{this.props.title}</Title>
+            <InfoDescription>{this.props.infoDescription}</InfoDescription>
+            <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
+            <Sources>
+              {Object.keys(this.props.sources).map((key, index) => {
+                return <Link href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
+              })}
+            </Sources>
+          </InfoContainer>
+          <ImageContainer>
+            <Image src={this.props.imgUrl} />
+          </ImageContainer>
+        </Container>
+      </ThemeProvider>
+    )
   }
 }
 
@@ -41,7 +41,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  
+
   padding: 15px;
 `
 const InfoContainer = styled.div`
@@ -53,8 +53,8 @@ const InfoContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   `
-  
-  const Title = styled.h2`
+
+const Title = styled.h2`
   font-size: 2em;
   flex: 1 0 100%;
 `
@@ -65,15 +65,16 @@ const InfoDescription = styled.p`
   margin-right: 1em;
 `
 
-
 const ImageContainer = styled.div`
   margin: auto 20px;
   order: 1;
-  max-width: 55%
+  max-width: 55%;
 `
+
 const Image = styled.img`
   width: 80%;
 `
+
 const Sources = styled.p`
   font-size: 1em;
   color: ${props => props.theme.colors.black};
