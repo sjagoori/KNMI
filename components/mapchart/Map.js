@@ -38,10 +38,7 @@ const Loader = styled.div`
 
 const Chart = styled.div`
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  max-width: 75vw;
 
   @media (max-width: 1300px) {
     & svg {

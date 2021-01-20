@@ -1,5 +1,6 @@
 import { select, selectAll } from 'd3';
 import { path, w, h } from './composer'
+import theme from 'styles/theme'
 
 /**
  * Function handles mouseover event
@@ -86,6 +87,6 @@ export const handleFilter = (data) => {
 
 export const isNegative = a => { return a < 0 }
 
-export const getColor = (a, b) => { return (a ? '#008000' : '#FF0000') + (getAbsolute(b) > 100 && getAbsolute(b) > 0 ? 99 : getAbsolute(b) < 20 && getAbsolute(b) > 0 ? 20 : getAbsolute(b)) }
+export const getColor = (a, b) => { return (a ? theme.colors.green : theme.colors.red) + (getAbsolute(b) > 100 && getAbsolute(b) > 0 ? 99 : getAbsolute(b) < 20 && getAbsolute(b) > 0 ? 20 : getAbsolute(b)) }
 
 export const getAbsolute = a => { return Math.abs(Math.round(a * 100)) }

@@ -2,6 +2,7 @@ import { select, geoMercator, geoPath, selectAll, json } from 'd3';
 import { handleFilter, handleMouseOver, handleMouseOut, handleMouseMove, isNegative, getColor } from './util';
 const mapData = require('assets/AQICN_data_coords.json')
 const mapDataBefore = require('assets/mapdata_2018.json')
+import theme from 'styles/theme'
 
 export const projection = geoMercator().scale(700).center([0, 63])
 export const path = geoPath().projection(projection)
@@ -9,7 +10,8 @@ export const w = '75vw'
 export const h = 800
 
 export function composer(data) {
-  const container = select("#" + data.chartId).append('div')
+  const container = select("#" + data.chartId)
+    .append('div')
 
   const topcontainer = container.append('div')
     .attr('class', 'topcontainer')
@@ -22,9 +24,9 @@ export function composer(data) {
     .attr('class', 'radiocontainer')
 
   const legend = topcontainer.append('div')
-  .style('display', 'flex')
-  .style('align-items', 'center')
-  .style('justify-content', 'space-between')
+    .style('display', 'flex')
+    .style('align-items', 'center')
+    .style('justify-content', 'space-between')
 
   legend.append('span').text('Increase')
 
@@ -33,7 +35,7 @@ export function composer(data) {
     .style('height', '10px')
     .attr('id', 'legendBox')
 
-    .style('background', 'linear-gradient(to right, #ff0000, #00ff00)')
+    .style('background', 'linear-gradient(to right,' + theme.colors.red + ',' + theme.colors.green)
 
 
   legend.append('span').text('Decrease')
