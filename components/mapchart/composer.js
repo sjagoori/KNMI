@@ -16,10 +16,11 @@ export function composer(data) {
   const topcontainer = container.append('div')
     .attr('class', 'topcontainer')
     .style('display', 'flex')
+    .style('align-items', 'center')
     .style('justify-content', 'space-between')
     .style('margin-bottom', '20px')
 
-  topcontainer.append('div')
+  topcontainer.append('div').append('h3').text('Let’s compare before and after COVID-19 first wave')
 
   const radiocontainer = topcontainer.append('div')
     .attr('class', 'radiocontainer')
@@ -43,7 +44,7 @@ export function composer(data) {
 
   const group = radiocontainer.append('div')
     .style('display', 'flex')
-    .style('width', '350px')
+    .style('width', '300px')
     .style('margin', '15px')
     .style('justify-content', 'space-between')
 
