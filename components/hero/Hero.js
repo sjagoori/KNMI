@@ -46,7 +46,7 @@ export default class Hero extends Component {
 
 const Container = styled.div`
   margin-top: 140px;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
