@@ -1,39 +1,37 @@
 import { Component } from 'react'
 import Navbar from 'components/navbar/Navbar'
-import mapboxgl from 'mapbox-gl'
+import Hero from 'components/hero/Hero'
+
 import Map from 'components/mapchart/Map'
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props)
-  }
+export default function Home() {
+  return (
+    <>
+      <Navbar
+        links={{
+          link1: { label: 'Link', url: '#' },
+          link2: { label: 'Link', url: '#' },
+          link3: { label: 'Link', url: '#' },
+        }}
+        cta={{ label: 'label', url: '#' }}
+      />
 
-  componentDidMount() {
-    // new mapboxgl.Map({
-    //   container: 'map',
-    //   style: 'mapbox://styles/mapbox/streets-v11',
-    //   center: [4.895168, 52.370216],
-    //   zoom: 5
-    // });
-  }
+      <Hero
+        imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
+        title='What effect has the coronavirus on our NO² emission?'
+        lead='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
+        label='something'
+        url='#'
+        buttonLabel='What is NO²'
+      />
 
 
-  render() {
-    return (
-      <>
-        {/* <div id='map'></div> */}
-
-        <Map
-          id='container'
-          title='Title'
-          lead='description'
-          // primarySet='https://example.com/dataset.json'
-          // secondarySet='https://example.com/dataset.json' //optional
-          // mapData='https://cartomap.github.io/nl/wgs84/gemeente_2020
-          // mapData='https://gist.githubusercontent.com/MariellaCC/0055298b94fcf2c16940/raw/8b145cbcef92e1431446cf87fb278283750fa3b1/ne_50m_admin_0_countries_simplified.json'
-          // filterOptions={['option1', 'option2']} //optional
-        />
-      </>
-    )
-  }
+      <Map
+        id='container'
+        title='Title'
+        lead='description'
+      />
+    </>
+  )
 }
