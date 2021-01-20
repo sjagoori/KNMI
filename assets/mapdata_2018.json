@@ -60747,7 +60747,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": false,
-        "delta": -0.827586207,
+        "delta": 1,
         "centroid":{"longitude":38.963745 ,"latitude":35.243322}
       },
       "geometry": {
