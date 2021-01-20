@@ -43,6 +43,12 @@ const Chart = styled.div`
   justify-content: center;
   overflow: hidden;
 
+  @media (max-width: 1300px) {
+    & svg {
+      width: 100vw
+    }
+  }
+
   & svg path {
     fill: ${props => props.theme.mapBackgroundColor};    
   }

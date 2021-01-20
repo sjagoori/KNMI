@@ -3,9 +3,9 @@ import { handleFilter, handleMouseOver, handleMouseOut, handleMouseMove, isNegat
 const mapData = require('assets/AQICN_data_coords.json')
 const mapDataBefore = require('assets/mapdata_2018.json')
 
-export const projection = geoMercator().scale(700).center([6, 63])
+export const projection = geoMercator().scale(700).center([0, 63])
 export const path = geoPath().projection(projection)
-export const w = '99vw'
+export const w = '75vw'
 export const h = 800
 
 export function composer(data) {
