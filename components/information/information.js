@@ -14,9 +14,7 @@ export default class Information extends Component {
           <Container>
             <InfoContainer>
               <Title>{this.props.title}</Title>
-              <Icon />
               <InfoDescription>{this.props.infoDescription}</InfoDescription>
-              <Icon />
               <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
             </InfoContainer>
             <ImageContainer>
@@ -40,13 +38,12 @@ const Container = styled.div`
   margin: 40px;
   margin-left: 80px;
   padding: 15px;
-  margin-top: 200px;
+  // margin-top: 200px;
 `
 const InfoContainer = styled.div`
   margin: 0 auto;
   margin-left: 1em;
-  max-width: 40%;
-  // height: 400px;
+  max-width: 50%;
   
   display: inline-flex;
   flex-direction: row;

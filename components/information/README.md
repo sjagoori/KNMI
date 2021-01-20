@@ -18,7 +18,7 @@ import Information from 'components/information/Information'
 
 <Information
     title='Important title'
-    infoDescriptionSecondary='Some text here'
+    infoDescription='Some text here'
     infoDescriptionSecondary='Some additional text here'
     imgUrl='https://images.unsplash.com/photo-1581626221838-9715c0e06049?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'
 />
