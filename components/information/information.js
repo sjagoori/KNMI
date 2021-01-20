@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
-import Icon from 'assets/svg/help'
+import Link from 'next/link'
 
 export default class Information extends Component {
   constructor(props) {
@@ -16,6 +16,11 @@ export default class Information extends Component {
               <Title>{this.props.title}</Title>
               <InfoDescription>{this.props.infoDescription}</InfoDescription>
               <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
+              <Sources>
+                {Object.keys(this.props.sources).map((key, index) => {
+                  return <Link href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
+                })}
+              </Sources>
             </InfoContainer>
             <ImageContainer>
               <Image src={this.props.imgUrl} />
@@ -27,7 +32,6 @@ export default class Information extends Component {
 }
 
 const Container = styled.div`
-  background-color: #fffccc;
   max-width: 85vw;
   height: 500px;
 
@@ -38,7 +42,6 @@ const Container = styled.div`
   margin: 40px;
   margin-left: 80px;
   padding: 15px;
-  // margin-top: 200px;
 `
 const InfoContainer = styled.div`
   margin: 0 auto;
@@ -69,4 +72,19 @@ const ImageContainer = styled.div`
 `
 const Image = styled.img`
   width: 80%;
+`
+const Sources = styled.p`
+  font-size: 1em;
+  color: ${props => props.theme.colors.black};
+  opacity: 0.5;
+  white-space: pre-line;
+
+  a {
+    display: block;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: ${props => props.theme.colors.primary}
+  }
+
 `

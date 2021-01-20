@@ -1,4 +1,5 @@
 import Navbar from 'components/navbar/Navbar'
+import Information from 'components/information/Information'
 
 export default function Home() {
   return (
