@@ -18,9 +18,9 @@ export default function Home() {
 
       <Hero
         imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
-        title='What effect has the coronavirus on our NO² emission?'
+        title='What effect has the coronavirus on our Nitrogen Dioxide emission?'
         lead='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
+        description='Throughout this pandemic we have seen alot, but we also have seen something extraordinary, our NO² got significantly less. But how much?'
         label='something'
         url='#about'
         buttonLabel='What is NO²'
