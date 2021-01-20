@@ -32,7 +32,7 @@ export default class Information extends Component {
 }
 
 const Container = styled.div`
-  width: 85vw;
+  width: 75vw;
   height: 500px;
 
   margin-left: 50%;
