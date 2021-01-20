@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import styled from 'styled-components';
 
+
 export default class Chart extends Component {
   constructor(props) {
     super(props)
@@ -13,11 +14,14 @@ export default class Chart extends Component {
           <ImageContainer>
             <Image src={this.props.imgUrl} />
           </ImageContainer>
+
         </Container>
       </>
     )
   }
 }
+
+
 
 const Container = styled.div`
   margin-top: 20px;
