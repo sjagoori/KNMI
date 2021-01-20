@@ -34,6 +34,7 @@ export const handleMouseOver = (e, i) => {
     .text(i.properties.admin)
     .style('text-align', 'center')
     .style('margin', '0px 5px 0px 5px')
+    .style('font-weight', '700')
 
   const table = tt
     .append('table')
@@ -49,11 +50,15 @@ export const handleMouseOver = (e, i) => {
     .append('th')
     .attr("colspan", 2)
     .text('2019')
+    .style('border-bottom', '1px solid #333')
+    .style('font-weight', '600')
 
   headerRow
     .append('th')
     .attr("colspan", 2)
     .text('2020')
+    .style('border-bottom', '1px solid #333')
+    .style('font-weight', '600')
 
   const marchRow = table
     .append('tr')
@@ -63,9 +68,11 @@ export const handleMouseOver = (e, i) => {
   marchRow
     .append('td')
     .text('March')
+
   marchRow
     .append('td')
     .text('%')
+    .style('border-right', '1px solid #333')
 
   // 2020
   marchRow
@@ -74,7 +81,6 @@ export const handleMouseOver = (e, i) => {
   marchRow
     .append('td')
     .text('%')
-
 
   const aprilRow = table
     .append('tr')
@@ -86,6 +92,7 @@ export const handleMouseOver = (e, i) => {
   aprilRow
     .append('td')
     .text('%')
+    .style('border-right', '1px solid #333')
 
   // 2020
   aprilRow
@@ -102,9 +109,11 @@ export const handleMouseOver = (e, i) => {
   mayRow
     .append('td')
     .text('May')
+
   mayRow
     .append('td')
     .text('%')
+    .style('border-right', '1px solid #333')
 
   // 2020
   mayRow
@@ -124,6 +133,8 @@ export const handleMouseOver = (e, i) => {
   juneRow
     .append('td')
     .text('%')
+    .style('border-right', '1px solid #333')
+
 
   // 2020
   juneRow
