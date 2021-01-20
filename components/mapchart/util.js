@@ -15,6 +15,12 @@ export const handleMouseOver = (e, i) => {
     .style('left', e.pageX + 'px')
     .style('position', 'absolute')
     .style('background-color', 'white')
+    .style('padding', '10px')
+    .style('width', '200px')
+    .style('display', 'flex')
+    .style('flex-direction', 'column')
+    .style('align-items', 'center')
+
     .style('border-radius', '5px')
     .style('border', '1px solid black')
     .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
@@ -33,6 +39,7 @@ export const handleMouseOver = (e, i) => {
     .append('table')
     .attr('class', 'infotable')
     .style('opacity', i.properties.continent != 'Europe' ? 0 : 1)
+    .style('width', '100%')
 
 
   const headerRow = table
