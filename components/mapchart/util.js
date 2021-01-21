@@ -16,7 +16,7 @@ export const handleMouseOver = (e, i) => {
     .style('position', 'absolute')
     .style('background-color', 'white')
     .style('padding', '10px')
-    .style('width', '200px')
+    .style('width', '250px')
     .style('display', 'flex')
     .style('flex-direction', 'column')
     .style('align-items', 'center')
