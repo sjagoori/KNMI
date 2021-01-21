@@ -2,6 +2,8 @@ import { Component } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
 import Link from 'next/link'
+import BoxIcon from 'assets/svg/box'
+import TruckIcon from 'assets/svg/truck'
 
 export default class Information extends Component {
   constructor(props) {
@@ -14,16 +16,24 @@ export default class Information extends Component {
         <Container id={this.props.id}>
           <InfoContainer>
             <Title>{this.props.title}</Title>
-            <InfoDescription>{this.props.infoDescription}</InfoDescription>
-            <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
-            <Sources>
-              {Object.keys(this.props.sources).map((key, index) => {
-                return <Link href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
-              })}
-            </Sources>
+            <Inf>
+              <InfoDescription>
+                <Block><BoxIcon /></Block>
+                {this.props.infoDescription}
+              </InfoDescription>
+              <InfoDescription>
+                <Block><TruckIcon /></Block>
+                {this.props.infoDescriptionSecondary}
+              </InfoDescription>
+            </Inf>
           </InfoContainer>
           <ImageContainer>
             <Image src={this.props.imgUrl} />
+            <Sources>
+              {Object.keys(this.props.sources).map((key, index) => {
+                return <Link key={key} href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
+              })}
+            </Sources>
           </ImageContainer>
         </Container>
       </ThemeProvider>
@@ -31,48 +41,56 @@ export default class Information extends Component {
   }
 }
 
+const Block = styled.div`
+  > {
+    display: block;
+  }
+`
+
 const Container = styled.div`
   width: 75vw;
-  height: 500px;
-
+  height: 80vh;
   margin-left: 50%;
   transform: translateX(-50%);
-
   display: flex;
-  justify-content: center;
-  flex-direction: row;
 
   padding: 15px;
 `
 const InfoContainer = styled.div`
-  margin: 0 auto;
   margin-left: 1em;
-  max-width: 50%;
-  
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  `
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+`
+
+const Inf = styled.div`
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+`
 
 const Title = styled.h2`
   font-size: 2em;
-  flex: 1 0 100%;
+  margin-bottom: 1.5em;
 `
 
-const InfoDescription = styled.p`
+const InfoDescription = styled.div`
   opacity: 70%;
-  flex: 0 0 47%;
-  margin-right: 1em;
+  max-width: 45%;
 `
 
 const ImageContainer = styled.div`
-  margin: auto 20px;
   order: 1;
-  max-width: 55%;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 `
 
 const Image = styled.img`
-  width: 80%;
+  width: 100%;
 `
 
 const Sources = styled.p`

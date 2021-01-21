@@ -6,11 +6,11 @@ const w = '75vw'
 const h = '800'
 
 export function composer(data) {
-  const container = select("#" + data.chartId)
-  .append('div')
+  // const container = select("#" + data.chartId)
+  // .append('div')
 
-  select(container)
-  .append(svg)
+  // select(container)
+  // .append(svg)
   
 
 }

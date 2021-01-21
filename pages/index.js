@@ -1,33 +1,34 @@
-// import Navbar from 'components/navbar/Navbar'
-// import Hero from 'components/hero/Hero'
-// import Information from 'components/information/Information'
+import Navbar from 'components/navbar/Navbar'
+import Hero from 'components/hero/Hero'
+import Information from 'components/information/Information'
+import Map from 'components/mapchart/Map'
 import Chart from 'components/divergent/Chart'
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar
+      <Navbar
         links={{
-          link1: { label: 'Link', url: '#' },
-          link2: { label: 'Link', url: '#' },
-          link3: { label: 'Link', url: '#' },
+          link1: { label: 'Introduction', url: '#intro' },
+          link2: { label: 'About', url: '#about' },
+          link3: { label: 'Map', url: '#container' },
         }}
-        cta={{ label: 'label', url: '#' }}
+        cta={{ label: 'Source', url: 'https://github.com/sjagoori/KNMI' }}
       />
 
       <Hero
-        imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
-        title='What effect has the coronavirus on our NO² emission?'
-        lead='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
-        label='something'
+        id='into'
+        imgUrl='https://images.unsplash.com/photo-1566386576349-695cb12288f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'
+        title='What effect has the coronavirus on our Nitrogen Dioxide emission?'
+        description='Throughout this pandemic we have seen alot, but we also have seen something extraordinary, our NO² got significantly less. But how much?'
+        label='Introduction'
         url='#about'
         buttonLabel='What is NO²'
       />
 
       <Information
         id='about'
-        title='What is NO₂ and what are the effects?'
+        title='First of all, what is Nitrogen Dioxide (NO₂)?'
         infoDescription='Nitrogen Dioxide (NO₂) is one of the highly reactive gases and gets primarily in the air from the burning of fuel. It forms from emissions from gas-stoves, cars, trucks and buses, power plants, and off-road equipment.'
         infoDescriptionSecondary='Breathing air with high concentration of NO₂ can irritate airways in the human repiratory system. Short exposure can aggravate patients with respiratory diseases. Longer exposures to elevated concentratinos of NO₂ may contribute to the development of asthma.'
         imgUrl='https://i.ibb.co/Kz5s0KT/tropomi-map-NO2.jpg'
@@ -35,13 +36,18 @@ export default function Home() {
           source1: { url: 'https://aqicn.org/scale', label: 'AQICN severity levels (20-01-2021)' },
           source2: { url: 'https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2', label: 'epa.gov (20-01-2021)' }
         }}
-      /> */}
+      />
+
+      <Map
+        id='container'
+        title='Let’s compare before and after COVID-19 first wave'
+        credits={[{ label: 'AQINC for emisson data', url: 'https://aqicn.org/' }, { label: 'Markuslerner for the GeoJSON map', url: 'https://github.com/markuslerner/travelscope/blob/master/public/map/2.0.0/ne_50m_admin_0_countries_simplified.json' }]}
+      />
 
       <Chart
         id="aaa"
-      imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
+        imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
       />
-
 
     </>
   )

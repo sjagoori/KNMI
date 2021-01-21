@@ -12,7 +12,7 @@ export default class Hero extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Container>
+        <Container id={this.props.id}>
           <SubContainer>
 
             <Link href={this.props.url}>
@@ -45,8 +45,8 @@ export default class Hero extends Component {
 }
 
 const Container = styled.div`
-  margin-top: 140px;
-  height: 75vh;
+  margin-top: 30px;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
