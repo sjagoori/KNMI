@@ -45,7 +45,7 @@ export default class Hero extends Component {
 }
 
 const Container = styled.div`
-  margin-top: 140px;
+  margin-top: 30px;
   height: 80vh;
   display: flex;
   justify-content: center;
