@@ -31,7 +31,7 @@ export const handleMouseOver = (e, i) => {
 
   tt
     .append('p')
-    .text(i.properties.admin)
+    .text(i.properties.admin + ' - ' + (isNegative(Math.round(i.properties.delta * 100) / 100) ? '📉' : '📈') + ' ' + Math.round(i.properties.delta * 100) / 100 + '%')
     .style('text-align', 'center')
     .style('margin', '0px 5px 0px 5px')
     .style('font-weight', '700')
