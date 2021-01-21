@@ -1,8 +1,8 @@
-import { Component } from 'react'
 import Navbar from 'components/navbar/Navbar'
 import Hero from 'components/hero/Hero'
 import Information from 'components/information/Information'
 import Map from 'components/mapchart/Map'
+import Chart from 'components/divergent/Chart'
 
 export default function Home() {
   return (
@@ -41,8 +41,14 @@ export default function Home() {
       <Map
         id='container'
         title='Let’s compare before and after COVID-19 first wave'
-        credits={[{label: 'AQINC for emisson data', url:'https://aqicn.org/'}, {label: 'Markuslerner for the GeoJSON map', url:'https://github.com/markuslerner/travelscope/blob/master/public/map/2.0.0/ne_50m_admin_0_countries_simplified.json'}]}
+        credits={[{ label: 'AQINC for emisson data', url: 'https://aqicn.org/' }, { label: 'Markuslerner for the GeoJSON map', url: 'https://github.com/markuslerner/travelscope/blob/master/public/map/2.0.0/ne_50m_admin_0_countries_simplified.json' }]}
       />
+
+      <Chart
+        id="aaa"
+        imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
+      />
+
     </>
   )
 }
