@@ -65,11 +65,23 @@ export function composer(data) {
       .style('cursor', 'pointer')
   })
 
+  const formula = container.append('div')
+    .style('text-align', 'left')
+    .style('color', '#577699')
+    .style('font-size', '.8rem')
+    .style('font-style', 'italic')
+    .style('display', 'inline-block')
+
+  formula.append('span')
+    .text('Delta = (col(2020) - col(2019)) / col(2019)  ')
+
+
   const creditContainer = container.append('div')
-    .style('text-align', 'right')
+    .style('float', 'right')
     .style('color', 'grey')
     .style('font-size', '.8rem')
     .style('font-style', 'italic')
+    .style('display', 'inline-block')
 
   creditContainer.append('span')
     .text('A special thanks to: ')
@@ -85,7 +97,6 @@ export function composer(data) {
     .append("svg")
     .attr("width", w)
     .attr("height", h)
-    .style("margin-left", "0.45vw");
 
   map.selectAll("path")
     .data(mapData.features)

@@ -65,8 +65,6 @@ const Chart = styled.div`
   }
 
   .topcontainer{
-    padding: 0px 10px 0px 10px;
-
     div {
       min-width: 25%;
 
