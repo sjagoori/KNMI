@@ -21743,9 +21743,23 @@
         "abbrev_len": 4,
         "tiny": -99,
         "homepart": 1,
-        "delta": -0.490566037735849 ,
+        "delta": -0.1 ,
         "centroid":{"longitude":56.26392 ,"latitude":9.501785},
-        "euMember":true
+        "euMember":true,
+        "monthly": {"m2020":
+          {
+          "march": "n/a",
+          "april": "n/a",
+          "may": "n/a",
+          "june": "n/a"
+        },
+        "m2019": {
+          "march": "n/a",
+          "april": "n/a",
+          "may": "n/a",
+          "june": "n/a"
+        }}
+
       },
       "geometry": {
         "type": "MultiPolygon",
