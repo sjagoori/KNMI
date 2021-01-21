@@ -27,7 +27,7 @@ export default function Home() {
 
       <Information
         id='about'
-        title='What is NO₂ and what are the effects?'
+        title='First of all, what is Nitrogen Dioxide (NO₂)?'
         infoDescription='Nitrogen Dioxide (NO₂) is one of the highly reactive gases and gets primarily in the air from the burning of fuel. It forms from emissions from gas-stoves, cars, trucks and buses, power plants, and off-road equipment.'
         infoDescriptionSecondary='Breathing air with high concentration of NO₂ can irritate airways in the human repiratory system. Short exposure can aggravate patients with respiratory diseases. Longer exposures to elevated concentratinos of NO₂ may contribute to the development of asthma.'
         imgUrl='https://i.ibb.co/Kz5s0KT/tropomi-map-NO2.jpg'
