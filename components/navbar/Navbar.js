@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
 import Link from 'next/link'
 import Icon from 'assets/svg/logo'
+import Button from 'components/button/Button'
 
 export default class Navbar extends React.Component {
   constructor(props) {
@@ -18,11 +19,16 @@ export default class Navbar extends React.Component {
           </div>
           <div>
             {Object.keys(this.props.links).map((key, index) => {
-              return <Link href={this.props.links[key].url}>{this.props.links[key].label}</Link>
+              return <Link key={key} href={this.props.links[key].url}>{this.props.links[key].label}</Link>
             })}
           </div>
           <div>
-            <Link href={this.props.cta.url}>{this.props.cta.label}</Link>
+            <Button
+              label={this.props.cta.label}
+              url={this.props.cta.url}
+              variant='primary'
+            />
+            {/* <Link href={this.props.cta.url}>{this.props.cta.label}</Link> */}
           </div>
         </Container>
       </ThemeProvider>
@@ -32,11 +38,10 @@ export default class Navbar extends React.Component {
 
 const Container = styled.div`
   background-color:  ${props => props.theme.colors.white};
-  position: fixed;
-  top: 40px;
+  margin-top: 30px;
   overflow: hidden;
   height: 60px;
-  width: 85%;
+  width: 75vw;
   margin-left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -95,13 +100,13 @@ const Container = styled.div`
     }
 
   &:last-child {
-    border-left: .5px solid grey;
+    /* border-left: .5px solid grey; */
     height: 70%;
     justify-content: center;
-    background-color: #0000a4;
+    background-color: ${props => props.theme.colors.primary};
     transition: .3s;
-    margin-right: 1em;
-    border-radius: 5px;
+    /* margin-right: 1em; */
+    /* border-radius: 5px; */
     
     & a {
         text-align: center;
