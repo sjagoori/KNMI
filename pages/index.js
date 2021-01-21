@@ -9,14 +9,15 @@ export default function Home() {
     <>
       <Navbar
         links={{
-          link1: { label: 'Link', url: '#' },
-          link2: { label: 'Link', url: '#' },
-          link3: { label: 'Link', url: '#' },
+          link1: { label: 'Introduction', url: '#intro' },
+          link2: { label: 'About', url: '#about' },
+          link3: { label: 'Map', url: '#container' },
         }}
         cta={{ label: 'Source', url: 'https://github.com/sjagoori/KNMI' }}
       />
 
       <Hero
+        id='into'
         imgUrl='https://images.unsplash.com/photo-1566386576349-695cb12288f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'
         title='What effect has the coronavirus on our Nitrogen Dioxide emission?'
         description='Throughout this pandemic we have seen alot, but we also have seen something extraordinary, our NO² got significantly less. But how much?'

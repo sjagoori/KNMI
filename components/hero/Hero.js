@@ -12,7 +12,7 @@ export default class Hero extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Container>
+        <Container id={this.props.id}>
           <SubContainer>
 
             <Link href={this.props.url}>
