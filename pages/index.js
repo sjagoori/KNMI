@@ -13,15 +13,14 @@ export default function Home() {
           link2: { label: 'Link', url: '#' },
           link3: { label: 'Link', url: '#' },
         }}
-        cta={{ label: 'label', url: '#' }}
+        cta={{ label: 'Source', url: 'https://github.com/sjagoori/KNMI' }}
       />
 
       <Hero
         imgUrl='https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D'
         title='What effect has the coronavirus on our Nitrogen Dioxide emission?'
-        lead='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         description='Throughout this pandemic we have seen alot, but we also have seen something extraordinary, our NO² got significantly less. But how much?'
-        label='something'
+        label='Introduction'
         url='#about'
         buttonLabel='What is NO²'
       />
