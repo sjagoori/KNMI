@@ -65,6 +65,22 @@ export function composer(data) {
       .style('cursor', 'pointer')
   })
 
+  const creditContainer = container.append('div')
+    .style('text-align', 'right')
+    .style('color', 'grey')
+    .style('font-size', '.8rem')
+    .style('font-style', 'italic')
+
+  creditContainer.append('span')
+    .text('A special thanks to: ')
+    .style('font-weight', '500')
+
+  data.credits.map(key => {
+    creditContainer.append('a')
+      .text(key.label + ' | ')
+      .attr('href', key.url)
+  })
+
   var map = container
     .append("svg")
     .attr("width", w)
@@ -84,23 +100,6 @@ export function composer(data) {
     .on("mouseover", handleMouseOver)
     .on("mouseout", handleMouseOut)
     .on('mousemove', handleMouseMove)
-
-  const creditContainer = container.append('div')
-    .style('text-align', 'right')
-    .style('color', 'grey')
-    .style('font-size', '.8rem')
-    .style('font-style', 'italic')
-
-  creditContainer.append('span')
-    .text('A special thanks to:')
-    .style('font-weight', '500')
-
-  data.credits.map(key => {
-    creditContainer.append('a')
-      .text(key.label)
-      .attr('href', key.url)
-      .style('display', 'block')
-  })
 
   selectAll('input[name="radiogroup"').on('change', d => {
     handleFilter({
