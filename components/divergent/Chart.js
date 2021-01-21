@@ -1,18 +1,11 @@
-import {Component} from 'react'
-import CircularProgress from '@material-ui/core/CircularProgress';
-import styled, { ThemeProvider } from 'styled-components';
-import theme from 'styles/theme'
+import { Component } from 'react'
+import styled from 'styled-components';
 
 export default class Chart extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { state: false }
-  }
-
   render() {
     return (
       <>
-        <Container  id={this.props.id}>
+        <Container id={this.props.id}>
           <ImageContainer>
             <Image src={this.props.imgUrl} />
           </ImageContainer>
@@ -31,7 +24,6 @@ const Container = styled.div`
 `
 
 const ImageContainer = styled.div`
-  border: 1px solid red;
   width: 75vw;
   display: flex;
   align-items: center;
@@ -39,19 +31,9 @@ const ImageContainer = styled.div`
 `
 
 const Image = styled.img`
-border: 1px solid green;
   margin: 0 auto;
   min-width: 450px;
   width: 90%;
   height: 70%;
   object-fit: cover;
-`
-
-
-const Loader = styled.div`
-  position: absolute;
-  left: 50%;
-  top: 50%; 
-  transform: translateY(-50%); 
-  transform: translate(-50%, -50%);
 `
