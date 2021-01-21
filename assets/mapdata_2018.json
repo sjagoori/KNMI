@@ -39285,7 +39285,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": true,
-        "delta": 99,
+        "delta": 0.1,
         "centroid":{"longitude":55.169438 ,"latitude":23.881275},
         "monthly": {"m2020":
           {
@@ -39541,7 +39541,7 @@
         "tiny": -99,
         "homepart": 1,
         "euMember": true,
-        "delta": 99,
+        "delta": 0.1,
         "centroid":{"longitude":56.879635 ,"latitude":24.603189},
         "monthly": {"m2020":
           {
