@@ -12,6 +12,7 @@ export default function Home() {
           link1: { label: 'Introduction', url: '#intro' },
           link2: { label: 'About', url: '#about' },
           link3: { label: 'Map', url: '#container' },
+          link4: { label: 'Countries', url: '#emission' },
         }}
         cta={{ label: 'Source', url: 'https://github.com/sjagoori/KNMI' }}
       />
@@ -45,7 +46,7 @@ export default function Home() {
       />
 
       <Chart
-        id="aaa"
+        id="emission"
         imgUrl='https://i.ibb.co/5TvCjJC/cleanshot-graph.jpg'
       />
 
