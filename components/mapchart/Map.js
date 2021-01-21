@@ -53,8 +53,10 @@ const Chart = styled.div`
   max-width: 75vw;
 
   @media (max-width: 1300px) {
-    & svg {
-      width: 100vw
+    max-width: 100vw;
+
+    svg {
+      width: 100vw;
     }
   }
 
