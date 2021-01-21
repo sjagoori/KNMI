@@ -1,5 +1,4 @@
 import {Component} from 'react'
-import { composer } from './composer'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
