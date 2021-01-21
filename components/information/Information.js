@@ -2,6 +2,8 @@ import { Component } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme'
 import Link from 'next/link'
+import BoxIcon from 'assets/svg/box'
+import TruckIcon from 'assets/svg/truck'
 
 export default class Information extends Component {
   constructor(props) {
@@ -14,11 +16,17 @@ export default class Information extends Component {
         <Container id={this.props.id}>
           <InfoContainer>
             <Title>{this.props.title}</Title>
-            <InfoDescription>{this.props.infoDescription}</InfoDescription>
-            <InfoDescription>{this.props.infoDescriptionSecondary}</InfoDescription>
+            <InfoDescription>
+              <Block><BoxIcon/></Block>
+              {this.props.infoDescription}
+              </InfoDescription>
+            <InfoDescription>
+            <Block><TruckIcon/></Block>
+              {this.props.infoDescriptionSecondary}
+            </InfoDescription>
             <Sources>
               {Object.keys(this.props.sources).map((key, index) => {
-                return <Link href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
+                return <Link key={key} href={this.props.sources[key].url}>{this.props.sources[key].label}</Link>
               })}
             </Sources>
           </InfoContainer>
@@ -30,6 +38,12 @@ export default class Information extends Component {
     )
   }
 }
+
+const Block = styled.div`
+  > {
+    display: block;
+  }
+`
 
 const Container = styled.div`
   width: 75vw;
