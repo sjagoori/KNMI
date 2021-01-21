@@ -15,7 +15,7 @@ export default class Navbar extends React.Component {
       <ThemeProvider theme={theme}>
         <Container>
           <div>
-            <Icon />
+            <img height='60' width='60' src="https://pbs.twimg.com/profile_images/469463397948325891/Qalao7Eb.jpeg"/>
           </div>
           <div>
             {Object.keys(this.props.links).map((key, index) => {
