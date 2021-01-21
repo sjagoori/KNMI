@@ -100,13 +100,10 @@ const Container = styled.div`
     }
 
   &:last-child {
-    /* border-left: .5px solid grey; */
     height: 70%;
     justify-content: center;
     background-color: ${props => props.theme.colors.primary};
     transition: .3s;
-    /* margin-right: 1em; */
-    /* border-radius: 5px; */
     
     & a {
         text-align: center;
