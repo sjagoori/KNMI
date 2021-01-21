@@ -15,6 +15,7 @@ export default class Map extends React.Component {
     let state = composer({
       chartId: this.props.id,
       title: this.props.title,
+      credits: this.props.credits
     })
 
     this.setState({ state: state })

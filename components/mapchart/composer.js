@@ -20,7 +20,7 @@ export function composer(data) {
     .style('justify-content', 'space-between')
     .style('margin-bottom', '20px')
 
-  topcontainer.append('div').append('h3').text('Let’s compare before and after COVID-19 first wave')
+  topcontainer.append('div').append('h3').text(data.title)
 
   const radiocontainer = topcontainer.append('div')
     .attr('class', 'radiocontainer')
@@ -84,6 +84,23 @@ export function composer(data) {
     .on("mouseover", handleMouseOver)
     .on("mouseout", handleMouseOut)
     .on('mousemove', handleMouseMove)
+
+  const creditContainer = container.append('div')
+    .style('text-align', 'right')
+    .style('color', 'grey')
+    .style('font-size', '.8rem')
+    .style('font-style', 'italic')
+
+  creditContainer.append('span')
+    .text('A special thanks to:')
+    .style('font-weight', '500')
+
+  data.credits.map(key => {
+    creditContainer.append('a')
+      .text(key.label)
+      .attr('href', key.url)
+      .style('display', 'block')
+  })
 
   selectAll('input[name="radiogroup"').on('change', d => {
     handleFilter({

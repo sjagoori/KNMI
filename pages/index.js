@@ -40,8 +40,8 @@ export default function Home() {
 
       <Map
         id='container'
-        title='Title'
-        lead='description'
+        title='Let’s compare before and after COVID-19 first wave'
+        credits={[{label: 'AQINC for emisson data', url:'https://aqicn.org/'}, {label: 'Markuslerner for the GeoJSON map', url:'https://github.com/markuslerner/travelscope/blob/master/public/map/2.0.0/ne_50m_admin_0_countries_simplified.json'}]}
       />
     </>
   )
