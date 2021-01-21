@@ -21,7 +21,7 @@ export default function Home() {
         id='into'
         imgUrl='https://images.unsplash.com/photo-1566386576349-695cb12288f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'
         title='What effect has the coronavirus on our Nitrogen Dioxide emission?'
-        description='During this pandemic, we have seen alot, felt alot, and changed alot. This also includes our behaviour, mobility and kitchen time. All of summed up examples contain some kind of combustion process. This process produces Nitrogen dioxide (NO₂).'
+        description='During this pandemic, we have seen alot, felt alot, and changed alot. This also includes our behaviour, mobility and kitchen time. All of summed up examples contain some kind of combustion process. This process produces Nitrogen dioxide (NO₂). Together with other pollutants it creates a hazardous air to live in. Examples we all may know are for example China, and India. Explore in the map how the emmission has changed from 2019 to 2020 and find out of COVID-19 had an impact on our emmission.'
         label='Introduction'
         url='#about'
         buttonLabel='What is NO₂'
