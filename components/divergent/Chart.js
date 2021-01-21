@@ -9,20 +9,7 @@ export default class Chart extends Component {
     this.state = { state: false }
   }
 
-  async componentDidMount() {
-
-    let state = composer({
-      chartId: this.props.id,
-      title: this.props.title,
-    })
-
-    this.setState({ state: state })
-  }
-
   render() {
-    const state = this.state.state
-    const loadState = <Loader><CircularProgress /></Loader>
-
     return (
       <>
         <Container  id={this.props.id}>
